@@ -1,42 +1,185 @@
-.grain, .hop { -webkit-animation-name: float; -webkit-animation-duration: 10s; animation-iteration-count: infinite;/*	transition: translate 5s ease-in-out;*/ }
-.dot { animation: grow 2s infinite; transition: all 0.2s ease-in-out; }
-.microb { animation: rotate 2s infinite; transition: all 5s ease-in-out; }
-.kegs-vector:hover { animation: go-in ease-in-out 1s; animation-iteration-count: 1; transform-origin: 50% 50%; animation-fill-mode: forwards; /*when the spec is finished*/ }
-.bam { top: 250px; }
-.after { top: 0px; }
-.roating-arrows-vector { animation: spin 10s infinite; }
-.yeast-vector { animation: spin 30s infinite; }
-@keyframes go-in {
-	0% { opacity: 1; transform: translate(0px, 0px); }
-	60% { opacity: 1; transform: translate(30px, 0px); }
-	80% { transform: translate(-10px, 0px); }
-	100% { opacity: 0; transform: translate(-1500px, 0px); }
+.grain {
+	-webkit-animation-name: float-grain;
+	-webkit-animation-duration: 10s;
+	animation-iteration-count: infinite;/*	transition: translate 5s ease-in-out;*/
 }
-@keyframes float {
-	0%, 100% { transform: translate(0); }
-	25% { transform: translateY(-3px) translateX(3px); }
-	50% { transform: translateY(-3px) translateX(-3px); }
-	75% { transform: translateY(3px) translateX(3px); }
-}
-@keyframes something {
-	from { transform: perspective(0px) translate3d(0px, 0px, 0px); }
 
-	/*	50% {
-			transform: perspective(500px) translate3d(10px,5px,0px);
-		}*/
-	to { transform: perspective(0px) translate3d(10px, -5px, 0px); }
+.hop {
+	-webkit-animation-name: float-hops;
+	-webkit-animation-duration: 10s;
+	animation-iteration-count: infinite;/*	transition: translate 5s ease-in-out;*/
 }
+
+.dot {
+	animation: grow 2s infinite;
+	transition: all 0.2s ease-in-out;
+}
+
+.microb {
+	animation: rotate 2s infinite;
+	transition: all 5s ease-in-out;
+}
+
+.kegs-vector:hover {
+	animation: go-in ease-in-out 1s;
+	animation-iteration-count: 1;
+	transform-origin: 50% 50%;
+	animation-fill-mode: forwards; /*when the spec is finished*/
+}
+
+.bam {
+	top: 250px;
+}
+
+.after {
+	top: 0px;
+}
+
+.roating-arrows-vector {
+	animation: spin 10s infinite;
+}
+
+.yeast-vector {
+	animation: spin 30s infinite;
+}
+
+@keyframes go-in {
+	0% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate(30px, 0px);
+	}
+
+	80% {
+		transform: translate(-10px, 0px);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(-1500px, 0px);
+	}
+
+}
+
+@keyframes float-hops {
+	0%,
+	100% {
+		-webkit-transform: translate(0) rotate(0deg);
+		transform: translate(0) rotate(0deg);
+	}
+
+	25% {
+		-webkit-transform: translateY(-random(10)px) translateX(4px) rotate(8deg);
+		transform: translateY(-random(10)px) translateX(4px) rotate(8deg);
+	}
+
+	50% {
+		-webkit-transform: translateY(-random(10)px) translateX(-random(10)px) rotate(6deg);
+		transform: translateY(-random(10)px) translateX(-random(10)px) rotate(6deg);
+	}
+
+	75% {
+		-webkit-transform: translateY(4px) translateX(3px) rotate(11deg);
+		transform: translateY(4px) translateX(3px) rotate(11deg);
+	}
+
+}
+
+@keyframes float-grain {
+	0%,
+	100% {
+	
+		transform: translate(0) rotate(0deg);
+	}
+
+	22% {
+		
+		transform: translateY(-5px) translateX(4px) rotate(2deg);
+	}
+
+	45% {
+	
+		transform: translateY(5px) translateX(-7px) rotate(6deg);
+	}
+
+
+	65% {
+	
+		transform: translateY(5px) translateX(-7px) rotate(6deg);
+	}
+
+	87% {
+	
+		transform: translateY(4px) translateX(3px) rotate(3deg);
+	}
+
+}
+
+@keyframes float-hops {
+	0%,
+	100% {
+	
+		transform: translate(0) rotate(0deg);
+	}
+
+	25% {
+		
+		transform: translateY(-3px) translateX(4px) rotate(8deg);
+	}
+
+	50% {
+		
+		transform: translateY(-7px) translateX(-5px) rotate(6deg);
+	}
+
+	75% {
+	
+		transform: translateY(4px) translateX(3px) rotate(11deg);
+	}
+
+}
+
 @keyframes grow {
-	from { transform: translate(0px); }
-	65% { transform: translateY(2px); }
-	to { transform: translate(0px); }
+	from {
+		transform: translate(0px);
+	}
+
+	65% {
+		transform: translateY(2px);
+	}
+
+	to {
+		transform: translate(0px);
+	}
+
 }
+
 @keyframes rotate {
-	from { transform: rotate(0deg); }
-	65% { transform: rotate(2deg); }
-	to { transform: rotate(0deg); }
+	from {
+		transform: rotate(0deg);
+	}
+
+	65% {
+		transform: rotate(2deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
+
 }
+
 @keyframes spin {
-	from { transform: rotate(0deg); }
-	to { transform: rotate(-360deg); }
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+
 }
