@@ -92,22 +92,28 @@
 @keyframes float-grain {
 	0%,
 	100% {
+	
 		transform: translate(0) rotate(0deg);
 	}
 
 	22% {
-		transform: translateY(-5px) translateX(4px) rotate(2deg);
+		
+		transform: translateY(-3px) translateX(4px) rotate(2deg);
 	}
 
 	45% {
-		transform: translateY(5px) translateX(-7px) rotate(6deg);
+	
+		transform: translateY(3px) translateX(-3px) rotate(3deg);
 	}
 
+
 	65% {
-		transform: translateY(5px) translateX(-7px) rotate(6deg);
+	
+		transform: translateY(3px) translateX(-3px) rotate(-3deg);
 	}
 
 	87% {
+	
 		transform: translateY(4px) translateX(3px) rotate(3deg);
 	}
 
@@ -116,19 +122,23 @@
 @keyframes float-hops {
 	0%,
 	100% {
+	
 		transform: translate(0) rotate(0deg);
 	}
 
 	25% {
-		transform: translateY(-3px) translateX(4px) rotate(8deg);
+		
+		transform: translateY(-3px) translateX(4px) rotate(2deg);
 	}
 
 	50% {
-		transform: translateY(-7px) translateX(-5px) rotate(6deg);
+		
+		transform: translateY(-3px) translateX(-5px) rotate(-3deg);
 	}
 
 	75% {
-		transform: translateY(4px) translateX(3px) rotate(11deg);
+	
+		transform: translateY(1px) translateX(3px) rotate(3deg);
 	}
 
 }
