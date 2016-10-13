@@ -1,4 +1,3 @@
-/* line 2, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 body {
     font: 24px Raleway;
     line-height: 1.5em;
@@ -30,17 +29,14 @@ body {
     justify-content: flex-start;
 }
 
-/* line 38, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .midde {
     height: 50vh;
 }
 
-/* line 43, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .harvey {
     cursor: pointer;
 }
 
-/* line 48, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .banner input:checked + .harvey {
     width: 60%;
     height: calc(100vh);
@@ -51,12 +47,10 @@ body {
     color: #5b7da2;
 }
 
-/* line 61, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 li.position {
     font-weight: 500;
 }
 
-/* line 66, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .skills {
     font-size: smaller;
     margin-top: 0;
@@ -65,36 +59,31 @@ li.position {
     text-align: end;
 }
 
-/* line 77, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .banner input:not(:checked) + .harvey {
     width: 25vw;
     height: 250px;
     margin-top: 0;
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
-    -webkit-transform: scale(0.4);
-    transform: scale(0.4);
+    -webkit-transform: scale(.4);
+    transform: scale(.4);
     text-align: center;
 }
 
-/* line 90, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .banner input:checked + .harvey > svg {
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
 }
 
-/* line 96, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .banner input:not(:checked) + .harvey > svg {
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
 }
 
-/* line 102, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 body {
     background: #333;
 }
 
-/* line 107, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -122,40 +111,34 @@ body {
     align-items: center;
 }
 
-/* line 137, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .harvey {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
 }
 
-/* line 144, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .nose {
     -webkit-animation: twitch 1s infinite;
     animation: twitch 1s infinite;
 }
 
-/* line 151, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .harvey:hover * .eyebrow,
 .harvey:focus * .eyebrow {
     -webkit-animation: raise 2s 1;
     animation: raise 2s 1;
 }
 
-/* line 158, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .harvey:hover * .mouth,
 .harvey:focus * .mouth {
     -webkit-animation: skew 2s 1;
     animation: skew 2s 1;
 }
 
-/* line 164, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .right-ear {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
-/* line 170, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .right-ear:hover {
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
@@ -163,13 +146,11 @@ body {
     transform: rotateZ(3deg);
 }
 
-/* line 178, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .left-ear {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
-/* line 184, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .left-ear:hover {
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
@@ -178,150 +159,137 @@ body {
 }
 
 @-webkit-keyframes twitch {
-    /* line 195, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
-    /* line 201, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     35% {
         -webkit-transform: translateY(-1px);
         transform: translateY(-1px);
     }
 
-    /* line 207, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
 
-    /* line 213, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     75% {
         -webkit-transform: translateY(-2px);
         transform: translateY(-2px);
     }
+
 }
 
 @keyframes twitch {
-    /* line 223, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
-    /* line 229, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     35% {
         -webkit-transform: translateY(-1px);
         transform: translateY(-1px);
     }
 
-    /* line 235, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
 
-    /* line 241, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     75% {
         -webkit-transform: translateY(-2px);
         transform: translateY(-2px);
     }
+
 }
 
 @-webkit-keyframes left-rotate {
-    /* line 251, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: rotateZ(0);
         transform: rotateZ(0);
     }
 
-    /* line 257, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     35% {
         -webkit-transform: rotateZ(-4deg);
         transform: rotateZ(-4deg);
     }
+
 }
 
 @keyframes left-rotate {
-    /* line 267, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: rotateZ(0);
         transform: rotateZ(0);
     }
 
-    /* line 273, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     35% {
         -webkit-transform: rotateZ(-4deg);
         transform: rotateZ(-4deg);
     }
+
 }
 
 @-webkit-keyframes right-rotate {
-    /* line 283, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: rotateZ(0);
         transform: rotateZ(0);
     }
 
-    /* line 289, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         -webkit-transform: rotateZ(1deg);
         transform: rotateZ(1deg);
     }
+
 }
 
 @keyframes right-rotate {
-    /* line 299, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: rotateZ(0);
         transform: rotateZ(0);
     }
 
-    /* line 305, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         -webkit-transform: rotateZ(1deg);
         transform: rotateZ(1deg);
     }
+
 }
 
 @-webkit-keyframes raise {
-    /* line 315, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
-    /* line 321, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
     }
+
 }
 
 @keyframes raise {
-    /* line 331, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
-    /* line 337, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
     }
+
 }
 
-/* line 344, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cilantro {
     position: relative;
     z-index: -1;
@@ -341,7 +309,6 @@ body {
     align-self: auto;
 }
 
-/* line 367, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .harvey:hover *.cilantro {
     -webkit-animation: rock 2s 10;
     animation: rock 2s 10;
@@ -349,21 +316,19 @@ body {
 }
 
 @-webkit-keyframes skew {
-    /* line 378, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     100% {
         -webkit-transform: skew(0);
         transform: skew(0);
     }
 
-    /* line 384, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         -webkit-transform: skew(1.5deg, -1.5deg);
         transform: skew(2deg, -1.5deg);
     }
+
 }
 
-/* line 391, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .intro {
     display: -webkit-box;
     display: -webkit-flex;
@@ -373,7 +338,7 @@ body {
     width: 100vw;
     height: 100vh;
     text-align: center;
-    background-image: url("omaha.jpeg");
+    background-image: url('omaha.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -387,7 +352,6 @@ body {
     justify-content: center;
 }
 
-/* line 419, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .ballon {
     height: 60vh;
     opacity: .7;
@@ -396,12 +360,10 @@ body {
     background-size: cover;
 }
 
-/* line 429, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .hi {
     color: white;
 }
 
-/* line 434, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .next {
     display: block;
     transform: translateZ(0);
@@ -411,12 +373,10 @@ body {
     scroll-behavior: smooth;
 }
 
-/* line 447, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .next:hover {
     color: white;
 }
 
-/* line 452, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .next:after {
     position: absolute;
     bottom: -12px;
@@ -431,49 +391,41 @@ body {
     border-left: 12px solid transparent;
 }
 
-/* line 470, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .next:hover:after {
     margin-top: 1em;
     border-top: 12px solid white;
 }
 
-/* line 477, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .next:focus:after {
     transform: translateY(15em);
     opacity: 0;
 }
 
-/* line 484, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .column {
     padding-top: 2em;
     cursor: pointer;
-    /* margin: 1em; */
     transition: padding 3600ms, opacity 1000ms, color 3600ms;
     opacity: .2;
     box-shadow: 0 3px 0 #3f5771;
     flex-basis: 30%;
 }
 
-/* line 498, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .column:hover {
     padding-top: 0;
     opacity: 1;
     box-shadow: 0 3px 0 #8ba4be;
 }
 
-/* line 506, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .center {
     max-width: 100%;
     text-align: center;
 }
 
-/* line 513, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .flat {
     margin: 0;
     padding-bottom: 2em;
 }
 
-/* line 518, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .row {
     display: flex;
     flex-direction: column;
@@ -482,41 +434,34 @@ body {
     justify-content: flex-start;
 }
 
-/* line 528, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .expert {
     display: flex;
     padding-bottom: 2em;
     justify-content: space-between;
 }
 
-/* line 536, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .expert-list > li {
     font-size: small;
     transition: all 1s ease-in;
 }
 
-/* line 542, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .expert-list > li:hover {
     font-size: large;
 }
 
-/* line 548, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 h4 {
     color: #5b7da2;
 }
 
-/* line 553, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 h5 {
     margin-bottom: 0;
 }
 
-/* line 558, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .summary {
     font-size: large;
     margin-bottom: 0;
 }
 
-/* line 565, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .aButton {
     position: relative;
     display: block;
@@ -525,24 +470,20 @@ h5 {
     padding: 20px;
     cursor: pointer;
     transition: all .5s ease;
-    /* outline: none; */
     border: none;
     border: 2px solid #fff;
 }
 
-/* line 583, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .bump {
     padding-bottom: 5em;
 }
 
-/* line 587, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .email {
     overflow: hidden;
     transform: translateY(150%);
     color: #fff;
 }
 
-/* line 595, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .email .reveal {
     position: absolute;
     top: -4em;
@@ -555,12 +496,10 @@ h5 {
     background-color: #57789b;
 }
 
-/* line 610, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .email:hover .reveal {
     top: 0;
 }
 
-/* line 617, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .banner {
     display: -webkit-box;
     display: -webkit-flex;
@@ -571,10 +510,9 @@ h5 {
     background: #2d2d2d;
 }
 
-/* line 630, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .banner-left {
-    background-image: -webkit-repeating-linear-gradient(220deg, transparent, transparent 25px, rgba(30, 30, 30, 0.11) 25px, rgba(30, 30, 30, 0.11) 50px);
-    background-image: repeating-linear-gradient(230deg, transparent, transparent 25px, rgba(30, 30, 30, 0.11) 25px, rgba(30, 30, 30, 0.11) 50px);
+    background-image: -webkit-repeating-linear-gradient(220deg, transparent, transparent 25px, rgba(30, 30, 30, .11) 25px, rgba(30, 30, 30, .11) 50px);
+    background-image: repeating-linear-gradient(230deg, transparent, transparent 25px, rgba(30, 30, 30, .11) 25px, rgba(30, 30, 30, .11) 50px);
     box-shadow: 0 5px 10px #202020;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
@@ -585,10 +523,9 @@ h5 {
     flex: 1 1 auto;
 }
 
-/* line 645, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .banner-right {
-    background-image: -webkit-repeating-linear-gradient(320deg, transparent, transparent 25px, rgba(30, 30, 30, 0.11) 25px, rgba(30, 30, 30, 0.11) 50px);
-    background-image: repeating-linear-gradient(130deg, transparent, transparent 25px, rgba(30, 30, 30, 0.11) 25px, rgba(30, 30, 30, 0.11) 50px);
+    background-image: -webkit-repeating-linear-gradient(320deg, transparent, transparent 25px, rgba(30, 30, 30, .11) 25px, rgba(30, 30, 30, .11) 50px);
+    background-image: repeating-linear-gradient(130deg, transparent, transparent 25px, rgba(30, 30, 30, .11) 25px, rgba(30, 30, 30, .11) 50px);
     box-shadow: 0 5px 10px #202020;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
@@ -599,7 +536,6 @@ h5 {
     flex: 1 1 auto;
 }
 
-/* line 660, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 nav {
     z-index: 100;
     z-index: 1000;
@@ -609,7 +545,6 @@ nav {
     box-shadow: 0 5px 10px #2d2d2d;
 }
 
-/* line 672, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 nav ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -625,7 +560,6 @@ nav ul {
     justify-content: space-around;
 }
 
-/* line 691, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 nav a {
     font-weight: bolder;
     display: block;
@@ -634,7 +568,6 @@ nav a {
     color: #eef2f5;
 }
 
-/* line 704, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 footer {
     display: -webkit-box;
     display: -webkit-flex;
@@ -658,13 +591,11 @@ footer {
     -ms-flex-direction: row;
 }
 
-/* line 731, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 footer ul {
     font-size: smaller;
     list-style: none;
 }
 
-/* line 738, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 footer a {
     font-weight: bolder;
     display: block;
@@ -672,12 +603,10 @@ footer a {
     color: #eef2f5;
 }
 
-/* line 749, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 footer a:hover {
     color: #57789b;
 }
 
-/* line 754, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 footer aside#nav {
     padding-right: 50px;
     -webkit-box-flex: 1;
@@ -689,7 +618,6 @@ footer aside#nav {
     align-self: center;
 }
 
-/* line 767, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 footer aside#email {
     -webkit-box-flex: 2;
     -webkit-flex: 2 1 auto;
@@ -700,37 +628,30 @@ footer aside#email {
     align-self: flex-start;
 }
 
-/* line 778, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ::-moz-selection {
     background: #d9c7bc;
 }
 
-/* line 783, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ::selection {
     background: #d9c7bc;
 }
 
-/* line 788, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 article::-moz-selection {
     background: #bccad9;
 }
 
-/* line 793, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 article::selection {
     background: #bccad9;
 }
 
-/* line 798, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 nav::-moz-selection {
     background: #c4bcd9;
 }
 
-/* line 803, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 nav::selection {
     background: #c4bcd9;
 }
 
-/* line 808, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main {
     display: -webkit-box;
     display: -webkit-flex;
@@ -757,20 +678,18 @@ main {
     -ms-flex-direction: column;
 }
 
-/* line 838, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main article {
     z-index: 50;
     width: 100%;
     color: #2d2d2d;
     background: #eef2f5;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
 }
 
-/* line 854, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main nav {
     font-size: small;
     z-index: 1000;
@@ -778,14 +697,13 @@ main nav {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
-/* line 873, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume {
     display: -webkit-box;
     display: -webkit-flex;
@@ -801,7 +719,6 @@ main header.resume {
     -ms-flex-direction: column;
 }
 
-/* line 892, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume .me-me {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -825,7 +742,6 @@ main header.resume .me-me {
     justify-content: space-around;
 }
 
-/* line 918, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume h1.first-name {
     font-weight: initial;
     margin: 0;
@@ -833,7 +749,6 @@ main header.resume h1.first-name {
     color: black;
 }
 
-/* line 929, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume h1.last-name {
     font-weight: lighter;
     margin: 0;
@@ -841,7 +756,6 @@ main header.resume h1.last-name {
     color: #666;
 }
 
-/* line 940, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume .contact-me {
     font-size: .5em;
     line-height: normal;
@@ -852,13 +766,11 @@ main header.resume .contact-me {
     text-align: right;
 }
 
-/* line 953, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume .contact-me h3 {
     font-size: large;
     font-weight: initial;
 }
 
-/* line 959, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume h3.quote {
     font-weight: normal;
     padding: .5em;
@@ -866,18 +778,15 @@ main header.resume h3.quote {
     border-left: .2em solid #808080;
 }
 
-/* line 970, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main header.resume h1 title,
 main header.resume h3 title {
     color: black;
 }
 
-/* line 975, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main section {
     width: 100%;
 }
 
-/* line 980, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 main details {
     border-radius: 7pt;
     -webkit-box-flex: 0;
@@ -886,12 +795,10 @@ main details {
     flex: 0 1 auto;
 }
 
-/* line 990, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 img.icon {
     margin-right: 1em;
 }
 
-/* line 995, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ul.icons-things {
     padding-left: 0;
     text-align: center;
@@ -900,47 +807,39 @@ ul.icons-things {
     box-shadow: 3px 10px 8px 1px black;
 }
 
-/* line 1006, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ul.name-things {
     margin-right: 1em;
 }
 
-/* line 1011, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ul.icons-things > li {
     padding: 1em;
 }
 
-/* line 1016, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ul {
     list-style: none;
 }
 
-/* line 1021, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .header {
     width: 100%;
     padding-bottom: .5em;
     text-align: left;
-    background: url("gray-border.png") repeat-x scroll 100% 100%;
+    background: url('gray-border.png') repeat-x scroll 100% 100%;
 }
 
-/* line 1031, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .title {
     font-weight: bold;
-    /* text-align: -webkit-auto; */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding-bottom: .6em;
     color: black;
-    /* display: inline-flex; */
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
-/* line 1050, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .inline-flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -968,7 +867,6 @@ ul {
     align-items: flex-start;
 }
 
-/* line 1080, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 hr {
     position: relative;
     top: -1em;
@@ -980,28 +878,23 @@ hr {
     border-style: double;
 }
 
-/* line 1094, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .history ul {
     list-style: none;
 }
 
-/* line 1099, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .history ul li.company {
     font-size: xx-large;
     font-weight: bold;
 }
 
-/* line 1105, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .history ul li.industry {
     font-weight: 800;
 }
 
-/* line 1110, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .history ul li.location {
     font-weight: normal;
 }
 
-/* line 1115, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .history ul span.date-range {
     font-size: medium;
     font-weight: 400;
@@ -1009,12 +902,10 @@ hr {
     color: #848484;
 }
 
-/* line 1125, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #logo-helper {
     display: none;
 }
 
-/* line 1131, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 input,
 textarea {
     margin: 0 0 20px 10px;
@@ -1024,15 +915,13 @@ textarea {
     outline-color: #5b7da2;
     background: -webkit-linear-gradient(#1f2124, #27292c);
     background: linear-gradient(#1f2124, #27292c);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
 }
 
-/* line 1146, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 input[type=text] {
     width: 50%;
 }
 
-/* line 1151, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .words {
     font-size: smaller;
     height: 2em;
@@ -1040,7 +929,6 @@ input[type=text] {
     opaicty: 0;
 }
 
-/* line 1161, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ul.icons-things > li > img:hover {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -1048,12 +936,10 @@ ul.icons-things > li > img:hover {
     transform: scale(1.2);
 }
 
-/* line 1169, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .ranger:focus {
     outline: none;
 }
 
-/* line 1174, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .ranger {
     height: 1px;
     margin: 0;
@@ -1066,7 +952,6 @@ ul.icons-things > li > img:hover {
     transitionx: .1s ease-in;
 }
 
-/* line 1190, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .ranger::-webkit-slider-thumb {
     width: 1em;
     height: 2em;
@@ -1078,13 +963,11 @@ ul.icons-things > li > img:hover {
     -webkit-appearance: none;
 }
 
-/* line 1205, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 textarea {
     min-width: 600px;
     min-height: 75px;
 }
 
-/* line 1211, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 input[type=submit] {
     font-weight: bold;
     float: right;
@@ -1093,17 +976,14 @@ input[type=submit] {
     color: #eef2f5;
     border: 3px solid #5b7da2;
     background: #5b7da2;
-    /* border-radius: 0.3em; */
     box-shadow: 0 3px 0 0 #364b61;
 }
 
-/* line 1226, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 input[type=submit]:hover {
     box-shadow: 0 2px 0 0 #364b61;
 }
 
 @-webkit-keyframes opens {
-    /* line 1233, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
         overflow-y: auto;
         width: 50%;
@@ -1113,20 +993,18 @@ input[type=submit]:hover {
         background-color: #fefefe;
     }
 
-    /* line 1246, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         background-color: #2d2d2d;
     }
 
-    /* line 1251, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     100% {
         width: 100%;
         opacity: 1;
     }
+
 }
 
 @keyframes opens {
-    /* line 1261, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
         overflow-y: auto;
         width: 50%;
@@ -1136,19 +1014,17 @@ input[type=submit]:hover {
         background-color: #fefefe;
     }
 
-    /* line 1274, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     50% {
         background-color: #2d2d2d;
     }
 
-    /* line 1279, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     100% {
         width: 100%;
         opacity: 1;
     }
+
 }
 
-/* line 1287, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 details[open] {
     overflow: auto;
     overflow: hidden;
@@ -1166,12 +1042,11 @@ details[open] {
     word-break: break-all;
     border-top: 1px solid #353535;
     border-top: 1px solid #353535;
-    box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, .2);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-/* line 1313, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 details {
     display: inline-block;
     text-align: center;
@@ -1179,51 +1054,42 @@ details {
     border-bottom: 1px solid #2d2d2d;
 }
 
-/* line 1323, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 details:hover {
     border-top: 1px solid #353535;
     border-bottom: 1px solid #353535;
 }
 
-/* line 1329, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 details[open]:hover {
     color: #e3e3e3;
     border-top: 1px solid #353535;
     border-bottom: 1px solid #353535;
 }
 
-/* line 1336, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 summary {
     outline: none;
 }
 
-/* line 1341, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 summary::-webkit-details-marker {
     color: #5b7da2;
 }
 
-/* line 1346, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 tr:nth-child(odd) {
     background-color: #282828;
 }
 
-/* line 1351, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 tr:nth-child(even) {
     background-color: #323232;
 }
 
-/* line 1356, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #comments.yield {
     width: auto;
 }
 
-/* line 1361, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #commenter {
     font-size: medium;
 }
 
-@media all and (min-width: 1200px) {
-    /* line 1369, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
+@media all and (min-width:1200px) {
     main,
     footer {
         width: 1200px;
@@ -1231,77 +1097,9 @@ tr:nth-child(even) {
         -ms-flex-item-align: center;
         align-self: center;
     }
+
 }
-@media all and (max-width: 600px) {
-    /* line 1381, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    footer {
-        flex-direction: column;
-        padding: 0;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-    }
 
-    /* line 1393, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    nav > ul {
-        padding: 0;
-        -webkit-flex-flow: column wrap;
-        -ms-flex-flow: column wrap;
-        flex-flow: column wrap;
-    }
-
-    /* line 1402, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    .yield > nav {
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-
-    /* line 1409, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    .yield > nav > ul {
-        -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
-
-    /* line 1416, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    nav a {
-        padding: 10px;
-        text-align: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    /* line 1426, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    nav > li:last-of-type a {
-        border-bottom: none;
-    }
-
-    /* line 1432, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    details,
-    details[open] {
-        margin: 0 0 0;
-    }
-
-    /* line 1437, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    header {
-        padding: 0;
-    }
-
-    /* line 1442, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    aside {
-        margin: 0 10px;
-        padding: 10px 0;
-    }
-
-    /* line 1448, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
-    textarea {
-        min-width: 400px;
-        min-height: 75px;
-    }
-}
-/* line 1455, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 body:before {
     position: fixed;
     z-index: 100;
@@ -1310,26 +1108,22 @@ body:before {
     width: 100%;
     height: 10px;
     content: '';
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
 }
 
-/* line 1470, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #contact {
     border-top: 0 solid;
 }
 
-/* line 1475, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 footer > h3 {
     font-size: smaller;
 }
 
-/* line 1480, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 p.smaller {
     font-size: smaller;
     padding: 0;
 }
 
-/* line 1487, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .code {
     font-family: Consolas;
     font-size: small;
@@ -1342,61 +1136,51 @@ p.smaller {
     border-radius: 2px;
 }
 
-/* line 1504, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #global_variable.code {
     color: blue;
     border: 0;
 }
 
-/* line 1510, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #string.code {
     color: #7da25b;
     border: 0;
 }
 
-/* line 1516, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #comment.code {
     color: gray;
     border: 0;
 }
 
-/* line 1522, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #normal.code {
     color: white;
     border: 0;
 }
 
-/* line 1528, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #number.code {
     color: #a25d5b;
     border: 0;
 }
 
-/* line 1534, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #reserved.code {
     color: #a2805b;
     border: 0;
 }
 
-/* line 1540, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #signature.code {
     color: #5b7da2;
     border: 0;
 }
 
-/* line 1546, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #method.code {
     color: #816648;
     border: 0;
 }
 
-/* line 1552, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 div.code {
     display: inline-block;
     text-align: left;
 }
 
-/* line 1559, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #excuse {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1419,7 +1203,6 @@ div.code {
     -ms-flex-direction: column;
 }
 
-/* line 1584, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #excuse > div.code {
     position: relative;
     top: 150px;
@@ -1431,20 +1214,17 @@ div.code {
     align-slef: center;
 }
 
-/* line 1600, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #excuse > div.code:hover {
     top: 0;
     opacity: .9;
 }
 
-/* line 1607, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #yay {
     display: block;
     width: auto;
     height: auto;
 }
 
-/* line 1615, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 #yay:hover {
     font-style: bolder;
     -webkit-animation: ripple .6s ease-in-out 2;
@@ -1453,62 +1233,55 @@ div.code {
 }
 
 @-webkit-keyframes ripple {
-    /* line 1627, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
         opacity: .25;
         color: #5b7da2;
         background-color: #5b7da2;
-        box-shadow: 1 0 0 5 rgba(91, 125, 162, 0.1), 0 0 0 20px rgba(91, 125, 162, 0.1), 0 0 0 40px rgba(91, 125, 162, 0.1), 0 0 0 60px rgba(91, 125, 162, 0.1);
+        box-shadow: 1 0 0 5 rgba(91, 125, 162, .1), 0 0 0 20px rgba(91, 125, 162, .1), 0 0 0 40px rgba(91, 125, 162, .1), 0 0 0 60px rgba(91, 125, 162, .1);
     }
 
-    /* line 1635, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     25% {
         opacity: .4;
-        box-shadow: 0 0 0 10px rgba(91, 125, 162, 0.1), 0 0 0 25px rgba(91, 125, 162, 0.1), 0 0 0 50px rgba(91, 125, 162, 0.1), 0 0 0 70px rgba(91, 125, 162, 0);
+        box-shadow: 0 0 0 10px rgba(91, 125, 162, .1), 0 0 0 25px rgba(91, 125, 162, .1), 0 0 0 50px rgba(91, 125, 162, .1), 0 0 0 70px rgba(91, 125, 162, 0);
     }
 
-    /* line 1641, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     75% {
         opacity: .8;
-        box-shadow: 0 0 0 15px rgba(91, 125, 162, 0.1), 0 0 0 35 rgba(91, 125, 162, 0.1), 0 0 0 55px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
+        box-shadow: 0 0 0 15px rgba(91, 125, 162, .1), 0 0 0 35 rgba(91, 125, 162, .1), 0 0 0 55px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
     }
 
-    /* line 1647, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     100% {
         opacity: 0;
-        box-shadow: 0 0 0 20px rgba(91, 125, 162, 0.1), 0 0 0 40px rgba(91, 125, 162, 0), 0 0 0 60px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
+        box-shadow: 0 0 0 20px rgba(91, 125, 162, .1), 0 0 0 40px rgba(91, 125, 162, 0), 0 0 0 60px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
     }
+
 }
 
 @keyframes ripple {
-    /* line 1656, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
         opacity: .25;
         color: #5b7da2;
         background-color: #5b7da2;
-        box-shadow: 1 0 0 5 rgba(91, 125, 162, 0.1), 0 0 0 20px rgba(91, 125, 162, 0.1), 0 0 0 40px rgba(91, 125, 162, 0.1), 0 0 0 60px rgba(91, 125, 162, 0.1);
+        box-shadow: 1 0 0 5 rgba(91, 125, 162, .1), 0 0 0 20px rgba(91, 125, 162, .1), 0 0 0 40px rgba(91, 125, 162, .1), 0 0 0 60px rgba(91, 125, 162, .1);
     }
 
-    /* line 1664, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     25% {
         opacity: .4;
-        box-shadow: 0 0 0 10px rgba(91, 125, 162, 0.1), 0 0 0 25px rgba(91, 125, 162, 0.1), 0 0 0 50px rgba(91, 125, 162, 0.1), 0 0 0 70px rgba(91, 125, 162, 0);
+        box-shadow: 0 0 0 10px rgba(91, 125, 162, .1), 0 0 0 25px rgba(91, 125, 162, .1), 0 0 0 50px rgba(91, 125, 162, .1), 0 0 0 70px rgba(91, 125, 162, 0);
     }
 
-    /* line 1670, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     75% {
         opacity: .8;
-        box-shadow: 0 0 0 15px rgba(91, 125, 162, 0.1), 0 0 0 35 rgba(91, 125, 162, 0.1), 0 0 0 55px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
+        box-shadow: 0 0 0 15px rgba(91, 125, 162, .1), 0 0 0 35 rgba(91, 125, 162, .1), 0 0 0 55px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
     }
 
-    /* line 1676, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     100% {
         opacity: 0;
-        box-shadow: 0 0 0 20px rgba(91, 125, 162, 0.1), 0 0 0 40px rgba(91, 125, 162, 0), 0 0 0 60px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
+        box-shadow: 0 0 0 20px rgba(91, 125, 162, .1), 0 0 0 40px rgba(91, 125, 162, 0), 0 0 0 60px rgba(91, 125, 162, 0), 0 0 0 80px rgba(91, 125, 162, 0);
     }
+
 }
 
-/* line 1683, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .carousel {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1531,7 +1304,6 @@ div.code {
     justify-content: center;
 }
 
-/* line 1708, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .carousel ul {
     position: relative;
     display: -webkit-box;
@@ -1553,7 +1325,6 @@ div.code {
     align-items: center;
 }
 
-/* line 1733, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .carousel li {
     position: relative;
     display: block;
@@ -1567,20 +1338,17 @@ div.code {
     border: 1px solid white;
 }
 
-/* line 1754, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .carousel li:hover,
 .carousel li.selected,
 .carousel li.selected:after {
     min-height: 220px;
     opacity: 1;
-    background: rgba(30, 30, 30, 0.5);
+    background: rgba(30, 30, 30, .5);
     background: -webkit-linear-gradient(top, #2d2d2d 58%, #252525 58%);
     background: linear-gradient(to bottom, #2d2d2d 58%, #252525 58%);
-    /* W3C */
-    box-shadow: 0 12px 0 0 rgba(30, 30, 30, 0.5);
+    box-shadow: 0 12px 0 0 rgba(30, 30, 30, .5);
 }
 
-/* line 1765, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .carousel .button {
     font-weight: bold;
     display: -webkit-box;
@@ -1600,18 +1368,14 @@ div.code {
     align-items: center;
 }
 
-/* line 1789, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .carousel .button:hover {
     opacity: 1;
     background: #5b7da2;
-    /* Old browsers */
     background: -webkit-linear-gradient(top, #5b7da2 58%, #557598 58%);
     background: linear-gradient(to bottom, #5b7da2 58%, #557598 58%);
-    /* W3C */
-    box-shadow: 0 12px 0 0 rgba(30, 30, 30, 0.5);
+    box-shadow: 0 12px 0 0 rgba(30, 30, 30, .5);
 }
 
-/* line 1799, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .carousel #articles,
 .carousel .button:after {
     display: block;
@@ -1621,36 +1385,30 @@ div.code {
     filter: alpha(opacity=40);
 }
 
-/* line 1811, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-container {
     padding: 0 6em;
     background: #b7c4c8;
 }
 
-/* line 1818, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map {
     position: relative;
 }
 
-/* line 1823, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 svg {
     max-width: 100%;
     height: auto;
 }
 
-/* line 1829, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-markers {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/* line 1837, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker {
     position: absolute;
 }
 
-/* line 1842, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker:after {
     position: absolute;
     top: 0;
@@ -1670,12 +1428,10 @@ svg {
     border-radius: 50%;
 }
 
-/* line 1865, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker:hover .map-marker-info {
     display: block;
 }
 
-/* line 1870, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker a {
     display: block;
     width: 1em;
@@ -1685,19 +1441,16 @@ svg {
     background-color: #ce606f;
 }
 
-/* line 1883, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker- {
     top: 35%;
     left: 65%;
 }
 
-/* line 1889, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker-scottsbluff {
     top: 46%;
     left: 28%;
 }
 
-/* line 1895, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 li.map-marker.map-marker-scottsbluff > a {
     width: .30em;
     height: .30em;
@@ -1705,13 +1458,11 @@ li.map-marker.map-marker-scottsbluff > a {
     background-color: #b7c4c8;
 }
 
-/* line 1904, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker-laramie {
     top: 50%;
     left: 10%;
 }
 
-/* line 1910, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 li.map-marker.map-marker-laramie > a {
     width: .4em;
     height: .4em;
@@ -1719,13 +1470,11 @@ li.map-marker.map-marker-laramie > a {
     background-color: #373e48;
 }
 
-/* line 1919, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker-omaha {
     top: 52%;
     left: 87%;
 }
 
-/* line 1925, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 li.map-marker.map-marker-omaha > a {
     width: .8em;
     height: .8em;
@@ -1733,19 +1482,16 @@ li.map-marker.map-marker-omaha > a {
     background-color: #b7c4c8;
 }
 
-/* line 1934, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker-denver {
     top: 70%;
     left: 15%;
 }
 
-/* line 1940, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 li.map-marker.map-marker-denver > a {
     border: .2em solid black;
     background-color: #373e48;
 }
 
-/* line 1946, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker-info {
     position: absolute;
     z-index: 999;
@@ -1757,7 +1503,6 @@ li.map-marker.map-marker-denver > a {
     transform: translate(-50%, -2em);
 }
 
-/* line 1961, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker-info h2 {
     padding: .5em;
     text-align: center;
@@ -1766,7 +1511,6 @@ li.map-marker.map-marker-denver > a {
     background-color: #5b7da2;
 }
 
-/* line 1972, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .map-marker-info-inner:after {
     position: absolute;
     top: 100%;
@@ -1781,12 +1525,10 @@ li.map-marker.map-marker-denver > a {
     border-left: .75em solid transparent;
 }
 
-/* line 1990, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .hovered {
     display: block;
 }
 
-/* line 1995, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .animate {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -1795,110 +1537,97 @@ li.map-marker.map-marker-denver > a {
 }
 
 @-webkit-keyframes bounce-in {
-    /* line 2011, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     20%,
     40%,
     60%,
     80%,
     100% {
-        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
     }
 
-    /* line 2017, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
-        -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        transform: scale3d(0.3, 0.3, 0.3);
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
         opacity: 0;
     }
 
-    /* line 2025, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     20% {
         -webkit-transform: scale3d(1.1, 1.1, 1.1);
         transform: scale3d(1.1, 1.1, 1.1);
     }
 
-    /* line 2031, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     40% {
-        -webkit-transform: scale3d(0.9, 0.9, 0.9);
-        transform: scale3d(0.9, 0.9, 0.9);
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
     }
 
-    /* line 2037, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     60% {
         -webkit-transform: scale3d(1.03, 1.03, 1.03);
         transform: scale3d(1.03, 1.03, 1.03);
         opacity: 1;
     }
 
-    /* line 2045, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     80% {
-        -webkit-transform: scale3d(0.97, 0.97, 0.97);
-        transform: scale3d(0.97, 0.97, 0.97);
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
     }
 
-    /* line 2051, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
         opacity: 1;
     }
+
 }
 
 @keyframes bounce-in {
-    /* line 2067, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0%,
     20%,
     40%,
     60%,
     80%,
     100% {
-        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
     }
 
-    /* line 2073, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
-        -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        transform: scale3d(0.3, 0.3, 0.3);
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
         opacity: 0;
     }
 
-    /* line 2081, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     20% {
         -webkit-transform: scale3d(1.1, 1.1, 1.1);
         transform: scale3d(1.1, 1.1, 1.1);
     }
 
-    /* line 2087, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     40% {
-        -webkit-transform: scale3d(0.9, 0.9, 0.9);
-        transform: scale3d(0.9, 0.9, 0.9);
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
     }
 
-    /* line 2093, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     60% {
         -webkit-transform: scale3d(1.03, 1.03, 1.03);
         transform: scale3d(1.03, 1.03, 1.03);
         opacity: 1;
     }
 
-    /* line 2101, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     80% {
-        -webkit-transform: scale3d(0.97, 0.97, 0.97);
-        transform: scale3d(0.97, 0.97, 0.97);
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
     }
 
-    /* line 2107, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
         opacity: 1;
     }
+
 }
 
-/* line 2116, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .animate-bounce-in {
     -webkit-animation-name: bounce-in;
     animation-name: bounce-in;
@@ -1907,50 +1636,45 @@ li.map-marker.map-marker-denver > a {
 }
 
 @-webkit-keyframes pop {
-    /* line 2126, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
         box-shadow: none;
     }
 
-    /* line 2134, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     8% {
         opacity: .4;
     }
 
-    /* line 2139, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     10% {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 0;
         box-shadow: 1px 0 16px 3px #373e48;
     }
+
 }
 
 @keyframes pop {
-    /* line 2151, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
         box-shadow: none;
     }
 
-    /* line 2159, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     8% {
         opacity: .4;
     }
 
-    /* line 2164, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
     10% {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 0;
         box-shadow: 1px 0 16px 3px #373e48;
     }
+
 }
 
-/* line 2174, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .animate-pop {
     -webkit-animation-name: pop;
     animation-name: pop;
@@ -1958,7 +1682,6 @@ li.map-marker.map-marker-denver > a {
     animation-duration: 1s;
 }
 
-/* line 2182, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .simpsons-intro {
     font-family: 'Gloria Hallelujah', 'Brush Script MT', cursive;
     font-weight: bold;
@@ -1975,70 +1698,52 @@ li.map-marker.map-marker-denver > a {
     backface-visibility: hidden;
 }
 
-/* line 2205, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .above,
 .below {
     height: 33vh;
     background: #333;
 }
 
-/* line 2212, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .the-simpsons {
     position: relative;
     -webkit-transition: all ease 5s;
     transition: all ease 5s;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-filter: blur(0);
 }
 
-/* line 2226, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .the-simpsons > p {
     margin: 0;
     margin-top: -.5em;
-    padding: 0;
+    padding: 0;  
 }
 
-/* line 2233, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .zoom {
-    z-index: 100;
-    -webkit-transform: scale(6);
-    transform: scale(6);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-filter: blur(0);
+z-index: 100;
+  font-size: 8em;
 }
 
-/* line 2245, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .top {
     width: 100%;
     height: 25%;
 }
 
-/* line 2251, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .middle {
     top: 0;
     width: 100%;
     height: 25%;
 }
 
-/* line 2259, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .bottom {
     top: 2%;
     width: 100%;
     height: 25%;
 }
 
-/* line 2267, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .clouds {
     position: relative;
     z-index: 10;
     margin: 0;
 }
 
-/* line 2275, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .clouds > div {
     position: absolute;
     min-width: 100px;
@@ -2049,7 +1754,6 @@ li.map-marker.map-marker-denver > a {
     box-shadow: inset -1em -2em 0 0 #f7e7eb;
 }
 
-/* line 2290, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .clouds > div:before,
 .clouds > div:after {
     position: absolute;
@@ -2060,7 +1764,6 @@ li.map-marker.map-marker-denver > a {
     box-shadow: inset -1em -1em 0 0 #f7e7eb;
 }
 
-/* line 2303, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-one {
     top: -16%;
     left: -9%;
@@ -2070,7 +1773,6 @@ li.map-marker.map-marker-denver > a {
     transform: rotate(-4deg);
 }
 
-/* line 2315, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-one:before {
     top: -63%;
     left: -62%;
@@ -2078,7 +1780,6 @@ li.map-marker.map-marker-denver > a {
     height: 145%;
 }
 
-/* line 2324, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-one:after {
     top: 51%;
     left: 1%;
@@ -2086,7 +1787,6 @@ li.map-marker.map-marker-denver > a {
     height: 57%;
 }
 
-/* line 2333, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-two {
     z-index: -1;
     top: 64%;
@@ -2095,7 +1795,6 @@ li.map-marker.map-marker-denver > a {
     height: 38%;
 }
 
-/* line 2343, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-two:before {
     top: -63%;
     left: 13%;
@@ -2103,7 +1802,6 @@ li.map-marker.map-marker-denver > a {
     height: 145%;
 }
 
-/* line 2352, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-two:after {
     top: 34%;
     left: 1%;
@@ -2111,7 +1809,6 @@ li.map-marker.map-marker-denver > a {
     height: 80%;
 }
 
-/* line 2361, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-three {
     top: 0;
     left: 61%;
@@ -2119,7 +1816,6 @@ li.map-marker.map-marker-denver > a {
     height: 73%;
 }
 
-/* line 2370, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-three:before {
     top: -50%;
     left: 61%;
@@ -2127,7 +1823,6 @@ li.map-marker.map-marker-denver > a {
     height: 145%;
 }
 
-/* line 2379, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-three:after {
     top: 66%;
     left: -13%;
@@ -2135,7 +1830,6 @@ li.map-marker.map-marker-denver > a {
     height: 57%;
 }
 
-/* line 2388, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-four {
     top: -4%;
     left: -10%;
@@ -2145,7 +1839,6 @@ li.map-marker.map-marker-denver > a {
     transform: rotate(4deg);
 }
 
-/* line 2400, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-four:before {
     top: -55%;
     left: -59%;
@@ -2153,7 +1846,6 @@ li.map-marker.map-marker-denver > a {
     height: 126%;
 }
 
-/* line 2409, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-four:after {
     top: 72%;
     left: 1%;
@@ -2161,7 +1853,6 @@ li.map-marker.map-marker-denver > a {
     height: 50%;
 }
 
-/* line 2418, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-five {
     top: 28%;
     left: 58%;
@@ -2169,7 +1860,6 @@ li.map-marker.map-marker-denver > a {
     height: 77%;
 }
 
-/* line 2427, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-five:before {
     top: -63%;
     left: 44%;
@@ -2177,7 +1867,6 @@ li.map-marker.map-marker-denver > a {
     height: 145%;
 }
 
-/* line 2436, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-five:after {
     top: 72%;
     left: 41%;
@@ -2185,7 +1874,6 @@ li.map-marker.map-marker-denver > a {
     height: 50%;
 }
 
-/* line 2445, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-six {
     top: 12%;
     left: 49%;
@@ -2193,7 +1881,6 @@ li.map-marker.map-marker-denver > a {
     height: 85%;
 }
 
-/* line 2454, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-six:before {
     top: 63%;
     left: 62%;
@@ -2201,7 +1888,6 @@ li.map-marker.map-marker-denver > a {
     height: 145%;
 }
 
-/* line 2463, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-six:after {
     top: 72%;
     left: 1%;
@@ -2209,7 +1895,6 @@ li.map-marker.map-marker-denver > a {
     height: 50%;
 }
 
-/* line 2472, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-seven {
     top: 74%;
     left: -8%;
@@ -2217,7 +1902,6 @@ li.map-marker.map-marker-denver > a {
     height: 83%;
 }
 
-/* line 2481, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-seven:before {
     top: 63%;
     left: 0;
@@ -2225,7 +1909,6 @@ li.map-marker.map-marker-denver > a {
     height: 145%;
 }
 
-/* line 2490, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-seven:after {
     top: 72%;
     left: 0;
@@ -2233,7 +1916,6 @@ li.map-marker.map-marker-denver > a {
     height: 50%;
 }
 
-/* line 2499, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-eight {
     top: 50%;
     left: 39%;
@@ -2241,7 +1923,6 @@ li.map-marker.map-marker-denver > a {
     height: 84%;
 }
 
-/* line 2508, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-eight:before {
     top: 63%;
     left: 62%;
@@ -2249,7 +1930,6 @@ li.map-marker.map-marker-denver > a {
     height: 145%;
 }
 
-/* line 2517, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-eight:after {
     top: 72%;
     left: 1%;
@@ -2257,7 +1937,6 @@ li.map-marker.map-marker-denver > a {
     height: 50%;
 }
 
-/* line 2526, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-nine {
     top: 38%;
     left: 23%;
@@ -2265,7 +1944,6 @@ li.map-marker.map-marker-denver > a {
     height: 55%;
 }
 
-/* line 2535, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-nine:before {
     top: 63%;
     left: 62%;
@@ -2273,7 +1951,6 @@ li.map-marker.map-marker-denver > a {
     height: 102%;
 }
 
-/* line 2544, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-nine:after {
     top: 72%;
     left: -10%;
@@ -2281,7 +1958,6 @@ li.map-marker.map-marker-denver > a {
     height: 137%;
 }
 
-/* line 2553, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .cloud-span {
     position: absolute;
     content: '';
@@ -2289,7 +1965,6 @@ li.map-marker.map-marker-denver > a {
     background: #fafbf0;
 }
 
-/* line 2563, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .left > .bubble-one {
     top: -19%;
     left: 72%;
@@ -2297,7 +1972,6 @@ li.map-marker.map-marker-denver > a {
     height: 60%;
 }
 
-/* line 2572, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .left > .bubble-two {
     top: -19%;
     left: 41%;
@@ -2305,7 +1979,6 @@ li.map-marker.map-marker-denver > a {
     height: 60%;
 }
 
-/* line 2581, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .right > .bubble-one {
     top: -19%;
     left: 10%;
@@ -2313,7 +1986,6 @@ li.map-marker.map-marker-denver > a {
     height: 60%;
 }
 
-/* line 2590, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .right > .bubble-two {
     top: -19%;
     left: 20%;
@@ -2321,20 +1993,88 @@ li.map-marker.map-marker-denver > a {
     height: 60%;
 }
 
-/* line 2599, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .to-left {
     -webkit-transform: translate(-60%, 0);
     transform: translate(-60%, 0);
 }
 
-/* line 2605, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 .to-right {
     -webkit-transform: translate(40%, 0);
     transform: translate(40%, 0);
 }
 
-/* line 2611, C:/Users/mscoh/Dev/crap/Rails/plays/app/assets/stylesheets/default.css.scss */
 ul.name-things > li:nth-child(1):hover + ul.icons-things > li:nth-child(1) {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+@media all and (max-width:600px) {
+    .expert {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+
+    .zoom {
+        transform: scale(4);
+    }
+
+    nav > ul {
+        padding: 0;
+        -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+    }
+
+    .yield > nav {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .yield > nav > ul {
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, .3);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    nav > li:last-of-type a {
+        border-bottom: none;
+    }
+
+    details,
+    details[open] {
+        margin: 0 0 0;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    aside {
+        margin: 0 10px;
+        padding: 10px 0;
+    }
+
+    textarea {
+        min-width: 400px;
+        min-height: 75px;
+    }
+
 }
