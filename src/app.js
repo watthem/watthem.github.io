@@ -104,9 +104,8 @@ $('.ranger').on('change', function () {
 
 
 function setSkills(element) {
-
-    var value = $(element).val() * 10;
-    var offset = value + 5;
+    var value = $(element).val() * 30;    
+    var offset = value + 3;
     $(element).css(
         'background',
         'linear-gradient(to right, #5B7DA2 0%, #5B7DA2 ' + value + '%, #b3b3b3 ' + value + '%, #b3b3b3 ' + offset + '%, #808080 ' + value + '%, #808080 100%)'
