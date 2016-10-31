@@ -353,7 +353,7 @@ body {
 }
 
 .ballon {
-    height: 60vh;
+    height: 100vh;
     opacity: .7;
     background-image: url(boop.jpeg);
     background-position: bottom;
@@ -480,7 +480,7 @@ h5 {
 
 .email {
     overflow: hidden;
-    transform: translateY(150%);
+    transform: translateY(200%);
     color: #fff;
 }
 
