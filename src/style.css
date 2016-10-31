@@ -442,7 +442,7 @@ body {
 
 .expert-list > li {
     font-size: small;
-    transition: all 1s ease-in;
+
 }
 
 .expert-list > li:hover {
@@ -2025,7 +2025,7 @@ ul.name-things > li:nth-child(1):hover + ul.icons-things > li:nth-child(1) {
     }
 
     .zoom {
-        transform: scale(4);
+        font-size: 4em;
     }
 
     nav > ul {
