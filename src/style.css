@@ -39,8 +39,7 @@ body {
 
 .banner input:checked + .harvey {
     width: 60%;
-    height: calc(100vh);
-    margin-top: 50vh;
+    height: calc(100vh - 120px);
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
     text-align: center;
@@ -60,7 +59,7 @@ li.position {
 }
 
 .banner input:not(:checked) + .harvey {
-    width: 25vw;
+
     height: 250px;
     margin-top: 0;
     -webkit-transition: all 2s ease;
@@ -73,11 +72,13 @@ li.position {
 .banner input:checked + .harvey > svg {
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
+    transform: translateY(25vh);
 }
 
 .banner input:not(:checked) + .harvey > svg {
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
+    transform: translateY(0);
 }
 
 body {
@@ -309,10 +310,45 @@ body {
     align-self: auto;
 }
 
-.harvey:hover *.cilantro {
-    -webkit-animation: rock 2s 10;
-    animation: rock 2s 10;
+
+.frame {
+    height: 5em;
+}
+
+.arrow {
+    height: 4em;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.in-view > .arrow {
     opacity: 1;
+}
+
+.arrow-left,
+.arrow-right {
+    transition: transform 4s ease;
+}
+
+.in-view > .arrow-left {
+    transform:  translate(-3em, 6.25em);
+}
+
+.in-view > .arrow-right {
+    transform: translate(3em, -6.25em);
+}
+
+
+.in-view > .arrow-middle {
+    transform: translateY(0);
+}
+
+
+
+@-webkit-keyframes connect {
+    100% {
+        transform: translateX(1em);
+    }
 }
 
 @-webkit-keyframes skew {
@@ -442,7 +478,6 @@ body {
 
 .expert-list > li {
     font-size: small;
-
 }
 
 .expert-list > li:hover {
@@ -537,10 +572,9 @@ h5 {
 }
 
 nav {
-    z-index: 100;
     z-index: 1000;
     width: 100%;
-    min-height: 100px;
+       height: auto;
     background: #5b7da2;
     box-shadow: 0 5px 10px #2d2d2d;
 }
@@ -961,6 +995,47 @@ ul.icons-things > li > img:hover {
     background: #5b7da2;
     box-shadow: 1px 1px 2px #5b7da2;
     -webkit-appearance: none;
+}
+
+.bounce {
+    opacity: 0;
+    -moz-transition: all 700ms ease-out;
+    -webkit-transition: all 700ms ease-out;
+    -o-transition: all 700ms ease-out;
+    transition: all 700ms ease-out;
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.ranger[title]:before {
+    content: attr(title);
+    position: relative;
+    top: -0.5em;
+    font-style: italic;
+    font-size: smaller;
+    font-weight: lighter;
+    color: #b3b3b3;
+    opacity: .5;
+}
+
+.ranger[title]:hover:before {
+    color: white;
+    opacity: 1;
 }
 
 textarea {
@@ -2015,6 +2090,8 @@ ul.name-things > li:nth-child(1):hover + ul.icons-things > li:nth-child(1) {
         justify-content: space-between;
     }
 
+
+
     footer {
         flex-direction: column;
         padding: 0;
@@ -2035,10 +2112,11 @@ ul.name-things > li:nth-child(1):hover + ul.icons-things > li:nth-child(1) {
         flex-flow: column wrap;
     }
 
-    .yield > nav {
+    nav {
         -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
         justify-content: space-around;
+     
     }
 
     .yield > nav > ul {
@@ -2077,4 +2155,13 @@ ul.name-things > li:nth-child(1):hover + ul.icons-things > li:nth-child(1) {
         min-height: 75px;
     }
 
+}
+
+.top-text {
+    transform: translate(20vw, -40vh);
+    opacity: 0;   
+}
+
+.fade{
+     transition: opacity 10s ease;
 }
