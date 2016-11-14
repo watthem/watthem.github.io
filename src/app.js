@@ -1,4 +1,7 @@
 var once = true;
+var $window = $(window);
+var $animation_elements = $('.animation-element');
+
 $('document').ready(function() {
     $('a[href*=\\#]').on('click', function(event) {
         event.preventDefault();
@@ -6,11 +9,8 @@ $('document').ready(function() {
             scrollTop: $(this.hash).offset().top
         }, 1500);
     });
-    var $window = $(window);
+
     var lastScroll = 0;
-    var $left = $(".left");
-    var $right = $(".right");
-    var $text = $(".the-simpsons");
     var words = ["Oh, why thank you", "I'm blushing", "Oh stop!", "I couldn't be more proud", "Well... ok :)", "Appreciate ya", "Yes - I am quite good at that", "I'm humbled", "That was nice of you", "Do you think? Gee, thanks"]
     $(".ranger").each(function(index) {
         setSkills(this);
@@ -69,23 +69,15 @@ function DoItForHer() {
     $(".left").addClass("to-left");
     $(".right").addClass("to-right");
     $(".the-simpsons").addClass("zoom");
-    // } else {
-    //      $(".left").removeClass("to-left");
-    //    $(".right").removeClass("to-right");
-    //     $("..the-simpsons").removeClass("zoom");
-    // }
 }
-var $animation_elements = $('.animation-element');
-var $window = $(window);
+
 
 function check_if_in_view() {
 
-   
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
 
-    console.log(window_top_position);
-    if(window_top_position <= 0)
+    if (window_top_position <= 0)
         return;
     check_on_harvey();
     var window_bottom_position = (window_top_position + window_height);
