@@ -335,7 +335,7 @@ body {
 }
 
 .in-view > .arrow-right {
-    transform: translate(3em, -6.25em);
+    transform: translate(3em, -2.25em);
 }
 
 
@@ -370,8 +370,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: column;    
     height: 100vh;
     text-align: center;
     background-image: url('omaha.jpeg');
