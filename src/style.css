@@ -539,6 +539,11 @@ a {
     top: 0;
 }
 
+.center > p {
+        width: 50%;
+    padding-left: 25%;
+}
+
 .banner {
     display: -webkit-box;
     display: -webkit-flex;
