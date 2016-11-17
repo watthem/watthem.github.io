@@ -99,6 +99,10 @@ function check_if_in_view() {
             if ($element.hasClass("the-simpsons")) {
                 DoItForHer();
             }
+            if ($element.hasClass("my-name")){
+                $(".intro-overlay").addClass("active");
+                $(".intro-overlay-header").addClass("active");
+            }
         } else {
             $element.removeClass('in-view');
         }
