@@ -85,7 +85,7 @@ function check_if_in_view() {
         var $element = $(this);
         var element_height = $element.outerHeight();
         var element_top_position = $element.offset().top;
-        var element_bottom_position = (element_top_position + element_height);
+        var element_bottom_position = (element_top_position + element_height) + 500;
         //check to see if this current container is within viewport
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
@@ -98,10 +98,6 @@ function check_if_in_view() {
             }
             if ($element.hasClass("the-simpsons")) {
                 DoItForHer();
-            }
-            if ($element.hasClass("my-name")){
-                $(".intro-overlay").addClass("active");
-                $(".intro-overlay-header").addClass("active");
             }
         } else {
             $element.removeClass('in-view');
