@@ -229,13 +229,21 @@
                 </div>
                 <!-- GBR -->
                 <div class="code-example center">
-                    <p><strong class="highlight">CSS3</strong>, <strong class="highlight">Animation</strong></p>
+                    <p><strong class="highlight">CSS3</strong>, <strong class="highlight">Animation</strong><strong class="highlight">Responsive</strong><</p>
                     <p>Naturally, any good corn-grown-boy is going to end up making something like this as they learn CSS3 animations</p>
                     <p data-height="500" data-theme-id="0" data-slug-hash="ObWEwJ" data-default-tab="css,result" data-user="watthem" data-embed-version="2" data-pen-title="GBR" data-preview="true"class="codepen">See the Pen <a href="http://codepen.io/watthem/pen/ObWEwJ/">GBR</a> by Matthew Hendricks (<a href="http://codepen.io/watthem">@watthem</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                     <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                 </div>
+                <div class="code-example center">
+                    <p><strong class="highlight">CSS3</strong>, <strong class="highlight">Animation</strong>, <strong class="highlight">Responsive</strong></p>
+                    <p>When I'm not working on my front-end skills, I'm probably spending time with my son, or trying to get him to go to bed.  I've spent quite a bit of time in the last few months looking at this nightlight while I swaddle/shush/swing my baby to sleep.  So much in fact, I felt compelled to recreate it from memory.</p>
+                        <p data-height="500" data-theme-id="dark" data-slug-hash="RoZjPy" data-default-tab="css,result" data-user="watthem" data-embed-version="2" data-pen-title="Arthur's Nightlight" class="codepen">See the Pen <a href="http://codepen.io/watthem/pen/RoZjPy/">Arthur's Nightlight</a> by Matthew Hendricks (<a href="http://codepen.io/watthem">@watthem</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                </div>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
             </div>
             <div class="github center">
+                <p>That's all I have for now, but I'm always trying to learn new skills.</p>
                 <p>The source code for this site is on my github: <br>
                 <a href="https://github.com/watthem" target="new"><img src="src/github.svg">watthem</a></p>
                 <a class="next" href="#resume">See my full resume below</a><div>
@@ -248,9 +256,13 @@
             </a>
         </section>
         <section class="resume" id="resume">
-            <div>
-                <object data="./src/matthew_hendricks-resume.pdf" type="application/pdf" style="width: 100%; height: 100vh;" title="Matthew Hendricks Resume"></object>
-            </div>
+            <script>
+                if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))
+                document.write('<div><<a href="./src/matthew_hendricks-resume.pdf" target="_blank">Download My Resume</a></div>');
+                else{
+                document.write('<div><object data="./src/matthew_hendricks-resume.pdf" type="application/pdf" style="width: 100%; height: 100vh;" title="Matthew Hendricks Resume"></object></div>')
+                }
+            </script>            
         </section>
     </main>
     <footer>
