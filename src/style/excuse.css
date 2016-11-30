@@ -1,0 +1,67 @@
+.code {
+    font-family: Consolas;
+    font-size: large;
+    line-height: 2;
+    display: inline;
+    width: auto;
+    padding: 0 3px;
+    white-space: normal;
+    border: 1px solid #606060;
+    border-radius: 2px;
+}
+
+.string.code {
+    color: #7da25b;
+    border: 0;
+}
+
+.comment.code {
+    color: gray;
+    border: 0;
+}
+
+.normal.code {
+    color: white;
+    border: 0;
+}
+
+.number.code {
+    color: #a25d5b;
+    border: 0;
+}
+
+.reserved.code {
+    color: #a2805b;
+    border: 0;
+}
+
+.signature.code {
+    color: #5b7da2;
+    border: 0;
+}
+
+.method.code {
+    color: #816648;
+    border: 0;
+}
+
+div.code {
+    display: inline-block;
+    text-align: left;
+}
+
+.excuse > div.code {
+    position: relative;
+    top: 150px;
+    max-height: 600px;
+    -webkit-transition: all 1s ease-in-out;
+    -webkit-animation: bubble 1.0s forwards;
+    animation: bubble 1.0s forwards;
+    opacity: .1;
+    align-slef: center;
+}
+
+.excuse > div.code:hover {
+    top: 0;
+    opacity: .9;
+}

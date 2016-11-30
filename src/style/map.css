@@ -1,0 +1,331 @@
+.map-container {
+    position: relative;
+    width: 100vmin;
+    padding: 0;
+    background: #b7c4c8;
+}
+
+.map {
+    position: relative;
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.map-markers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.map-marker {
+    position: absolute;
+}
+
+.map-marker:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2vmin;
+    height: 2vmin;
+    margin: -.5vmin 0 0 -.5vmin;
+    content: '';
+    -webkit-animation-name: pop;
+    animation-name: pop;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    border: 1px solid #373e48;
+    border-radius: 50%;
+}
+
+.map-marker:hover .map-marker-info {
+    display: block;
+}
+
+.map-marker a {
+    display: block;
+    width: 1vmin;
+    height: 1vmin;
+    text-indent: -9999px;
+    border-radius: 50%;
+    background-color: #ce606f;
+}
+
+/*noinspection CssUnusedSymbol*/
+.map-marker- {
+    top: 35%;
+    left: 65%;
+}
+
+.map-marker-scottsbluff {
+    top: 46%;
+    left: 28%;
+}
+
+li.map-marker.map-marker-scottsbluff > a {
+    width: 1vmin;
+    height: 1vmin;
+    border: .5vmin solid #333;
+    background-color: #b7c4c8;
+}
+
+.map-marker-laramie {
+    top: 50%;
+    left: 10%;
+}
+
+li.map-marker.map-marker-laramie > a {
+    width: 2vmin;
+    height: 2vmin;
+    border: .5vmin solid #333;
+    background-color: #373e48;
+}
+
+.map-marker-omaha {
+    top: 52%;
+    left: 87%;
+}
+
+li.map-marker.map-marker-omaha > a {
+    width: 3vmin;
+    height: 3vmin;
+    border: .5vmin solid #333;
+    background-color: #b7c4c8;
+}
+
+.map-marker-denver {
+    top: 70%;
+    left: 15%;
+}
+
+li.map-marker.map-marker-denver > a {
+    width: 4vmin;
+    height: 4vmin;
+    border: .5vmin solid #333;
+    background-color: #373e48;
+}
+
+.map-marker-info {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 50%;
+    display: none;
+    width: auto;
+    -webkit-transform: translate(-50%, -5vmin);
+    transform: translate(-50%, -5vmin);
+}
+
+.hovered {
+    display: block;
+}
+
+.map-marker-info h2 {
+    padding: 3vmin;
+    text-align: center;
+    color: #eef2f5;
+    border-radius: 1vmin;
+    background-color: #5b7da2;
+}
+
+.map-marker-info-inner:after {
+    font-size: 75%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: '';
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: white;
+    border-top: 3vmin solid #5b7da2;
+    border-right: 2vmin solid transparent;
+    border-left: 2vmin solid transparent;
+}
+
+.map-marker-info-inner:before {
+    font-size: 75%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    -webkit-animation: fade 1s ease;
+    animation: fade 1s ease;
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;    /* -webkit-transform: translateX(0);
+                            transform: translateX(0);
+                */
+    opacity: 0;
+    color: white;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@-webkit-keyframes bounce-in {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    }
+
+    0% {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        opacity: 0;
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+
+    60% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+
+}
+
+@keyframes bounce-in {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    }
+
+    0% {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        opacity: 0;
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+
+    60% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+
+}
+
+.animate-bounce-in {
+    -webkit-animation-name: bounce-in;
+    animation-name: bounce-in;
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+}
+
+@-webkit-keyframes pop {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        box-shadow: none;
+    }
+
+    8% {
+        opacity: .4;
+    }
+
+    10% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: 1px 0 16px 3px #373e48;
+    }
+
+}
+
+@keyframes pop {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        box-shadow: none;
+    }
+
+    8% {
+        opacity: .4;
+    }
+
+    10% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: 1px 0 16px 3px #373e48;
+    }
+
+}
