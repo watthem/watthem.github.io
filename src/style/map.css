@@ -3,10 +3,11 @@
     width: 100vmin;
     padding: 0;
     background: #b7c4c8;
+
 }
 
 .map {
-    position: relative;
+    position: relative;  
 }
 
 svg {
@@ -134,10 +135,10 @@ li.map-marker.map-marker-denver > a {
     color: #eef2f5;
     border-radius: 1vmin;
     background-color: #5b7da2;
+    font-size: 5vmin;
 }
 
 .map-marker-info-inner:after {
-    font-size: 75%;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -150,23 +151,6 @@ li.map-marker.map-marker-denver > a {
     border-top: 3vmin solid #5b7da2;
     border-right: 2vmin solid transparent;
     border-left: 2vmin solid transparent;
-}
-
-.map-marker-info-inner:before {
-    font-size: 75%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    -webkit-animation: fade 1s ease;
-    animation: fade 1s ease;
-    -webkit-animation-delay: 500ms;
-    animation-delay: 500ms;    /* -webkit-transform: translateX(0);
-                            transform: translateX(0);
-                */
-    opacity: 0;
-    color: white;
 }
 
 @-webkit-keyframes fade {
@@ -288,44 +272,4 @@ li.map-marker.map-marker-denver > a {
     animation-name: bounce-in;
     -webkit-animation-duration: .75s;
     animation-duration: .75s;
-}
-
-@-webkit-keyframes pop {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        box-shadow: none;
-    }
-
-    8% {
-        opacity: .4;
-    }
-
-    10% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-        box-shadow: 1px 0 16px 3px #373e48;
-    }
-
-}
-
-@keyframes pop {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        box-shadow: none;
-    }
-
-    8% {
-        opacity: .4;
-    }
-
-    10% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-        box-shadow: 1px 0 16px 3px #373e48;
-    }
-
 }
