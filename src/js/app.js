@@ -29,8 +29,7 @@ function doIterateHistory() {
         var self = this;
 
         setTimeout(function() {
-            $(self).addClass('hovered');
-            console.log($(self));
+            $(self).addClass('hovered');            
         }, 1500 * i);
         i++;
         setTimeout(function() {
@@ -41,9 +40,12 @@ function doIterateHistory() {
 }
 
 function doItForHer() {
-    $left.addClass("to-left");
-    $right.addClass("to-right");
-    $simpsons.addClass("zoom");
+    if($left)
+        $left.addClass("to-left");
+    if($right)
+        $right.addClass("to-right");
+    if($simpsons)
+        $simpsons.addClass("zoom");
 }
 
 function checkInView() {

@@ -1,7 +1,7 @@
 .map-container {
     position: relative;
     width: 100vmin;
-    padding: 0;
+    margin: auto;
     background: #b7c4c8;
 
 }

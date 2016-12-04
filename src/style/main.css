@@ -47,8 +47,8 @@ a {
 .middle-caption {
     position: relative;
     top: 25%;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .intro {
@@ -207,7 +207,7 @@ h5 {
 .button {
     font-size: 3vmin;
     position: relative;
-    left: 15%;
+    left: auto;
     display: block;
     width: 30vmin;
     padding: 1vmin;
@@ -357,7 +357,7 @@ h5 {
 #resume-toggle:checked ~ #resume-content,
 #email-toggle:checked ~ #email-content {
     height: auto;
-    padding: 10vmin;
+    padding: auto;
 }
 
 /*for-phone-only */
@@ -409,7 +409,7 @@ h5 {
     
     .tv-set,
     .map-container {
-        left: 5%;
+      
     }
 
 }
@@ -423,7 +423,7 @@ h5 {
 
     .tv-set,
     .map-container {
-        left: 15%;
+     
     }
 
     .code-example, .boxed {
@@ -447,7 +447,7 @@ h5 {
 
       .tv-set,
     .map-container {
-        left: 25%;
+     /*   left: 25%;*/
     }
 
     .tv-set {
