@@ -4,14 +4,13 @@ var $window = $(window);
 var $hash_link = $('a[href*=\\#]');
 var $animation_elements = $('.animation-element');
 
-var $logo_helper, $left, $right, $simpsons;
+var $left, $right, $simpsons;
 
 
 $('document').ready(function() {
 
-    $logo_helper = $('#logo-helper');
-    $left = $(".left");
-    $right = $(".right")
+    $left = $(".clouds-left");
+    $right = $(".clouds-right");
     $simpsons = $(".the-simpsons");
 
 });
@@ -35,6 +34,7 @@ function doIterateHistory() {
         setTimeout(function() {
             $(self).removeClass('hovered');
         }, 1500 * i);
+        //noinspection JSUnusedAssignment
         i++;
     });
 }
@@ -45,7 +45,7 @@ function doItForHer() {
     if($right)
         $right.addClass("to-right");
     if($simpsons)
-        $simpsons.addClass("zoom");
+        $simpsons.addClass("simpsons-text-zoom");
 }
 
 function checkInView() {
@@ -58,8 +58,6 @@ function checkInView() {
 
     if (window_top_position <= 0)
         return;
-
-    checkOnHarvey();
 
     window_bottom_position = (window_top_position + window_height);
 
@@ -90,21 +88,12 @@ function checkInView() {
     });
 }
 
-function checkOnHarvey() {
-    if (!$logo_helper)
-        return;
-
-    if ($logo_helper.prop('checked')) {
-        $logo_helper.prop('checked', false);
-    }
-}
-
-function toggleEmail() {
+function toggleHello() {
     
-    var $email = $('#email-toggle');    
+    var $hello = $('#hello-toggle');    
 
-    if (!$email.prop('checked')) {
-        $email.prop('checked', true);
+    if (!$hello.prop('checked')) {
+        $hello.prop('checked', true);
     }
 }
 
