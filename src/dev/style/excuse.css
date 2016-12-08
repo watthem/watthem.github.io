@@ -67,6 +67,8 @@ div.code
 
 .excuse > div.code
 {
+    font-size: smaller;
+
     position: relative;
     top: 0;
 
