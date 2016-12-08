@@ -308,8 +308,16 @@ body {
 }
 
 .code-example {
+  -webkit-transition: 500mss ease all;
+  transition: 500mss ease all;
   text-align: justify;
   border-bottom: 4vmin solid #373e48;
+}
+
+.code-example:hover,
+.code-example:focus {
+  -webkit-filter: blur(0);
+  filter: blur(0);
 }
 
 .city-background {
@@ -349,6 +357,7 @@ body {
   -ms-transform: translate(0);
   transform: translate(0);
   text-align: center;
+  outline: 0;
 }
 
 .github {
@@ -414,9 +423,9 @@ body {
 }
 
 .work-reveal {
-  border: 0.5vmin solid #fff;
   width: 25%;
   margin: auto;
+  border: 0.5vmin solid #fff;
 }
 
 .looking-for-work .work-reveal {
@@ -602,6 +611,7 @@ body {
 
 .social-link-icon {
   height: 10vmin;
+  padding: 0 1vmin;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -641,8 +651,8 @@ body {
 .slim-text {
   font-size: large;
   padding: 2em;
-  -webkit-box-shadow: 0vmax 0.5vmax 1vmax rgba(0,0,0, 0.75);
-  box-shadow: 0vmax 0.5vmax 1vmax rgba(0,0,0, 0.75);
+  -webkit-box-shadow: 0vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.75);
+  box-shadow: 0vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.75);
 }
 
 @media (max-width:300px) {
