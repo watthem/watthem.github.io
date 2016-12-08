@@ -499,6 +499,7 @@ body {
 }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
+  overflow: visible;
   max-height: 200vh;
   opacity: 1;
 }
@@ -635,7 +636,13 @@ body {
 #resume-toggle:checked ~ #resume-content,
 #hello-toggle:checked ~ #hello-content {
   height: auto;
-  padding: auto;
+}
+
+.slim-text {
+  font-size: large;
+  padding: 2em;
+  -webkit-box-shadow: 0vmax 0.5vmax 1vmax rgba(0,0,0, 0.75);
+  box-shadow: 0vmax 0.5vmax 1vmax rgba(0,0,0, 0.75);
 }
 
 @media (max-width:300px) {
@@ -676,7 +683,6 @@ body {
 
   .slim-text {
     margin: 2vh 0;
-    padding: 0;
   }
 }
 
@@ -705,7 +711,6 @@ body {
 
   .slim-text {
     margin: 2vh 0;
-    padding: 0;
   }
 }
 
@@ -721,12 +726,11 @@ body {
 
   .offset-text {
     position: relative;
-    width: 50%;
+    width: 80%;
   }
 
   .slim-text {
     margin: 0;
-    padding: 0;
   }
 
   .offset-left {
@@ -735,7 +739,7 @@ body {
   }
 
   .offset-right {
-    right: -50%;
+    right: -20%;
     padding-left: 5vmin;
   }
 }
@@ -744,6 +748,16 @@ body {
   body {
     font-size: 3vh;
     line-height: 1.8;
+  }
+
+  .offset-text {
+    position: relative;
+    width: 50%;
+  }
+
+  .offset-right {
+    right: -50%;
+    padding-left: 5vmin;
   }
 }
 
