@@ -414,12 +414,12 @@ body {
 }
 
 .work-reveal {
-  border-top: 0.5vmin solid #fff;
-  border-bottom: 0.5vmin solid #fff;
+  border: 0.5vmin solid #fff;
+  width: 25%;
+  margin: auto;
 }
 
 .looking-for-work .work-reveal {
-  width: auto;
   padding: 5vmin 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
