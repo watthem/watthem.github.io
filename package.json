@@ -1,0 +1,27 @@
+{
+  "name": "watthem.github.io",
+  "version": "1.0.0",
+  "description": "Matthew Hendricks Front-end Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watthem/watthem.github.io.git"
+  },
+  "keywords": [
+    "Matthew",
+    "Hendricks"
+  ],
+  "author": "watthem",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/watthem/watthem.github.io/issues"
+  },
+  "homepage": "https://github.com/watthem/watthem.github.io#readme"
+}
