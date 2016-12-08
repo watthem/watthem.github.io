@@ -292,7 +292,7 @@ body
 
 .read-more-state:checked ~ .read-more-trigger:before
 {
-    content: 'Show less about my work';
+    content: '';
 }
 
 .read-more-state ~ .read-more-wrap:after
