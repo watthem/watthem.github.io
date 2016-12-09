@@ -4,14 +4,14 @@ var $window = $(window);
 var $hash_link = $('a[href*=\\#]');
 var $animation_elements = $('.animation-element');
 
-var $left, $right, $simpsons;
-
+var left, right, simpsons;
 
 $('document').ready(function() {
 
-    $left = $(".clouds-left");
-    $right = $(".clouds-right");
-    $simpsons = $(".the-simpsons");
+    left = document.querySelectorAll(".clouds-left");
+    right = document.querySelectorAll(".clouds-right");
+    simpsons = document.querySelector(".the-simpsons");
+
 });
 
 function doSmoothScroll(event) {
@@ -39,12 +39,19 @@ function doIterateHistory() {
 }
 
 function doItForHer() {
-    if ($left)
-        $left.addClass("to-left");
-    if ($right)
-        $right.addClass("to-right");
-    if ($simpsons)
-        $simpsons.addClass("simpsons-text-zoom");
+
+    if (left) {
+        left.forEach(function(element, index) {
+            element.classList.add("to-left");
+        });
+    }
+    if (right) {
+        right.forEach(function(element, index) {
+            element.classList.add("to-right");
+        });
+    }
+    if (simpsons)
+        simpsons.classList.add("simpsons-text-zoom");
 }
 
 function checkInView() {
@@ -95,7 +102,6 @@ function toggleResume() {
         $resume.prop('checked', true);
     }
 }
-
 
 $window.on('scroll resize', checkInView);
 

@@ -1,111 +1,132 @@
-.nose {
+.nose
+{
     animation: twitch-nose 1s infinite;
 }
 
-.harvey-svg {
+.harvey-svg
+{
     width: 100%;
 }
 
 .harvey:hover .harvey-svg > .eyebrow,
-.harvey:focus .harvey-svg > .eyebrow {
+.harvey:focus .harvey-svg > .eyebrow
+{
     animation: raise-eyebrows 2s 1;
 }
 
 .harvey:hover .harvey-svg > .mouth,
-.harvey:focus .harvey-svg > .mouth {
+.harvey:focus .harvey-svg > .mouth
+{
     animation: smirk-mouth 2s 1;
 }
 
 .harvey:hover .harvey-svg,
-.harvey:focus .harvey-svg {
+.harvey:focus .harvey-svg
+{
     animation: shake-head 2s 1;
     animation-delay: 2s;
 }
 
-.right-ear {
+.right-ear
+{
     transition: transform 1s ease;
 }
 
 .right-ear:hover,
-.right-ear:focus {
+.right-ear:focus
+{
     transition: transform 2s ease;
     transform: rotateZ(3deg);
 }
 
-.left-ear {
+.left-ear
+{
     transition: transform 1s ease;
 }
 
 .left-ear:hover,
-.left-ear:focus {
+.left-ear:focus
+{
     transition: transform 2s ease;
     transform: rotateZ(-5deg);
 }
 
-@keyframes shake-head {
+@keyframes shake-head
+{
     10%,
-    90% {
+    90%
+    {
         transform: translate3d(-1px, 1px, 0) rotate(2deg);
     }
 
     20%,
-    80% {
+    80%
+    {
         transform: translate3d(2px, -2px, 0)  rotate(-2deg);
     }
 
     30%,
     50%,
-    70% {
+    70%
+    {
         transform: translate3d(-4px, -2px, 0)  rotate(4deg);
     }
 
     40%,
-    60% {
+    60%
+    {
         transform: translate3d(4px, 2px, 0)  rotate(-4deg);
     }
-
 }
 
-@keyframes twitch-nose {
+@keyframes twitch-nose
+{
     0%,
-    100% {
+    100%
+    {
         transform: translateY(0);
     }
 
-    35% {
+    35%
+    {
         transform: translateY(-1px);
     }
 
-    50% {
+    50%
+    {
         transform: translateY(0px);
     }
 
-    75% {
+    75%
+    {
         transform: translateY(-2px);
     }
-
 }
 
-@keyframes raise-eyebrows {
+@keyframes raise-eyebrows
+{
     0%,
-    100% {
+    100%
+    {
         transform: translateY(0);
     }
 
-    50% {
+    50%
+    {
         transform: translateY(-5px);
     }
-
 }
 
-@keyframes smirk-mouth {
+@keyframes smirk-mouth
+{
     0%,
-    100% {     
+    100%
+    {
         transform: skew(0);
     }
 
-    50% {    
+    50%
+    {
         transform: skew(2deg, -1.5deg);
     }
-
 }
