@@ -49,6 +49,9 @@ body
 
     justify-content: space-around;
 }
+.full-width{
+    max-width: 100%;
+}
 .nav
 {
     color: #fff;
