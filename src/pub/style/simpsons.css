@@ -1,0 +1,508 @@
+.loves
+{
+    height: auto;
+}
+
+.clouds-middle-row
+{
+    height: 50vh;
+}
+
+.simpsons-tv-set
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 75vmin;
+    margin: auto;
+
+    background-color: #7070a8;
+}
+
+.tv-view
+{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    width: 75%;
+    height: 90%;
+
+    background-color: #39419f;
+}
+
+.tv-channel
+{
+    top: 15%;
+
+    transform: rotate(45deg);
+}
+
+.tv-volume
+{
+    top: 35%;
+
+    transform: rotate(-45deg);
+}
+
+.dial
+{
+    position: absolute;
+    right: 5%;
+
+    width: 9%;
+    height: 12%;
+
+    border-radius: 100%;
+    background-color: #39419f;
+}
+
+.screen
+{
+    font-family: 'Gloria Hallelujah', 'Brush Script MT', cursive;
+    font-weight: bold;
+
+    position: absolute;
+    z-index: 10000;
+    top: 7%;
+    left: 7%;
+
+    overflow: hidden;
+
+    width: 85%;
+    height: 85%;
+
+    text-align: center;
+
+    color: #f9e143;
+    border-radius: 20%;
+    background: #58a7e0;
+
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.simpsons-scene
+{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.tv-panel
+{
+    position: absolute;
+    top: 55%;
+    right: 5%;
+
+    width: 10%;
+    height: 30%;
+
+    border-radius: 8%;
+    background-color: #39419f;
+}
+
+.tv-vents
+{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+.tv-line
+{
+    position: absolute;
+    top: 5%;
+
+    width: 0.5vmin;
+    height: 90%;
+
+    background-color: black;
+}
+
+.tv-bordered
+{
+    box-shadow: 0 0 0 1vmin black;
+}
+
+
+.the-simpsons
+{
+    transition: all ease 5s;
+}
+
+
+.simpsons-text-zoom
+{
+    font-size: 5vmax;
+
+    z-index: 100;
+
+    transform: translate(0, -50%);
+}
+
+.simpsons-text
+{
+    margin-top: 0.5vmax;
+}
+
+.clouds-top-row
+{
+    width: 100%;
+    height: 25%;
+}
+
+.clouds-middle-row
+{
+    top: 0;
+
+    width: 100%;
+    height: 25%;
+}
+
+.clouds-bottom-row
+{
+    z-index: 10;
+    top: -25%;
+
+    width: 100%;
+    height: 25%;
+}
+
+.simpsons-clouds
+{
+    position: relative;
+    z-index: 0;
+
+    margin: 0;
+}
+
+.simpsons-clouds > div
+{
+    position: absolute;
+
+    min-width: 100px;
+
+    transition: all 2s ease-in-out;
+
+    border-radius: 15em;
+    background: #fafbf0;
+    box-shadow: inset -1em -2em 0 0 #f7e7eb;
+}
+
+.simpsons-clouds > div:before,
+.simpsons-clouds > div:after
+{
+    position: absolute;
+
+    content: '';
+
+    border-radius: 15em;
+    background: #fafbf0;
+    box-shadow: inset -1em -1em 0 0 #f7e7eb;
+}
+
+#cloud-one
+{
+    top: -16%;
+    left: -9%;
+
+    width: 40%;
+    height: 61%;
+}
+
+#cloud-one:before
+{
+    top: -63%;
+    left: -62%;
+
+    width: 100%;
+    height: 145%;
+}
+
+#cloud-one:after
+{
+    top: 51%;
+    left: 1%;
+
+    width: 110%;
+    height: 57%;
+}
+
+#cloud-two
+{
+    z-index: -1;
+    top: 64%;
+    left: 28%;
+
+    width: 23%;
+    height: 38%;
+}
+
+#cloud-two:before
+{
+    top: -63%;
+    left: 13%;
+
+    width: 57%;
+    height: 145%;
+}
+
+#cloud-two:after
+{
+    top: 34%;
+    left: 1%;
+
+    width: 110%;
+    height: 80%;
+}
+
+#cloud-three
+{
+    top: 0;
+    left: 61%;
+
+    width: 46%;
+    height: 73%;
+}
+
+#cloud-three:before
+{
+    top: -50%;
+    left: 61%;
+
+    width: 61%;
+    height: 145%;
+}
+
+#cloud-three:after
+{
+    top: 66%;
+    left: -13%;
+
+    width: 97%;
+    height: 57%;
+}
+
+#cloud-four
+{
+    top: -4%;
+    left: -10%;
+
+    width: 50%;
+    height: 100%;
+}
+
+#cloud-four:before
+{
+    top: -55%;
+    left: -59%;
+
+    width: 100%;
+    height: 126%;
+}
+
+#cloud-four:after
+{
+    top: 72%;
+    left: 50%;
+
+    width: 55%;
+    height: 50%;
+}
+
+#cloud-five
+{
+    top: 28%;
+    left: 58%;
+
+    width: 34%;
+    height: 77%;
+}
+
+#cloud-five:before
+{
+    top: -63%;
+    left: 44%;
+
+    width: 100%;
+    height: 145%;
+}
+
+#cloud-five:after
+{
+    top: 72%;
+    left: 41%;
+
+    width: 110%;
+    height: 50%;
+}
+
+#cloud-six
+{
+    top: 12%;
+    left: 49%;
+
+    width: 50%;
+    height: 85%;
+}
+
+#cloud-six:before
+{
+    top: 63%;
+    left: 62%;
+
+    width: 100%;
+    height: 145%;
+}
+
+#cloud-six:after
+{
+    top: 72%;
+    left: 1%;
+
+    width: 110%;
+    height: 50%;
+}
+
+#cloud-seven
+{
+    top: 74%;
+    left: -8%;
+
+    width: 37%;
+    height: 83%;
+}
+
+#cloud-seven:before
+{
+    top: 63%;
+    left: 0;
+
+    width: 100%;
+    height: 145%;
+}
+
+#cloud-seven:after
+{
+    top: 72%;
+    left: 0;
+
+    width: 110%;
+    height: 50%;
+}
+
+#cloud-eight
+{
+    top: 50%;
+    left: 39%;
+
+    width: 38%;
+    height: 84%;
+}
+
+#cloud-eight:before
+{
+    top: 63%;
+    left: 62%;
+
+    width: 100%;
+    height: 145%;
+}
+
+#cloud-eight:after
+{
+    top: 72%;
+    left: 1%;
+
+    width: 110%;
+    height: 50%;
+}
+
+#cloud-nine
+{
+    top: 38%;
+    left: 23%;
+
+    width: 26%;
+    height: 55%;
+}
+
+#cloud-nine:before
+{
+    top: 63%;
+    left: 62%;
+
+    width: 63%;
+    height: 102%;
+}
+
+#cloud-nine:after
+{
+    top: 72%;
+    left: -10%;
+
+    width: 95%;
+    height: 137%;
+}
+
+.cloud-span
+{
+    position: absolute;
+
+    content: '';
+
+    border-radius: 100%;
+    background: #fafbf0;
+}
+
+.clouds-left > .bubble-one
+{
+    top: -19%;
+    left: 72%;
+
+    width: 18%;
+    height: 60%;
+}
+
+.clouds-left > .bubble-two
+{
+    top: -19%;
+    left: 41%;
+
+    width: 35%;
+    height: 60%;
+}
+
+.clouds-right > .bubble-one
+{
+    top: -19%;
+    left: 10%;
+
+    width: 18%;
+    height: 60%;
+}
+
+.clouds-right > .bubble-two
+{
+    top: -19%;
+    left: 20%;
+
+    width: 27%;
+    height: 60%;
+}
+
+/*noinspection CssUnusedSymbol*/
+.to-left
+{
+    transform: translate(-60%, 0);
+}
+
+/*noinspection CssUnusedSymbol*/
+.to-right
+{
+    transform: translate(40%, 0);
+}

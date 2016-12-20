@@ -35,7 +35,7 @@
 }
 
 .signature.code {
-  color: #5b7da2;
+  color: #7c95b9;
   border: 0;
 }
 
@@ -281,15 +281,22 @@ body {
 }
 
 .style-link {
-  color: #5b7da2;
+  color: #6b97ca;
+}
+
+.style-link:visited {
+  color: #7c95b9;
+}
+
+.style-link:hover {
+  color: #b48888;
 }
 
 .navigation {
   z-index: 1000;
   width: 100%;
   height: 10vh;
-  color: #e3e3e3;
-  background: #5b7da2;
+  background: #7c95b9;
 }
 
 .navigation-list {
@@ -304,14 +311,14 @@ body {
 }
 
 .nav {
-  color: #e3e3e3;
+  color: #fff;
 }
 
 .code-example {
   -webkit-transition: 500mss ease all;
   transition: 500mss ease all;
   text-align: justify;
-  border-bottom: 4vmin solid #373e48;
+  border-bottom: 4vmin solid #69778b;
 }
 
 .code-example:hover,
@@ -339,7 +346,7 @@ body {
 }
 
 .city-overlay-header {
-  color: #5b7da2;
+  color: #7c95b9;
 }
 
 .boxed {
@@ -364,6 +371,10 @@ body {
   height: 50vh;
 }
 
+.next {
+  color: #7c95b9;
+}
+
 .next:after {
   position: absolute;
   bottom: -2vh;
@@ -380,7 +391,7 @@ body {
 }
 
 .next:hover:after {
-  border-top: 1vmax solid #8ba4be;
+  border-top: 1vmax solid #7c95b9;
 }
 
 .next:focus:after {
@@ -441,7 +452,7 @@ body {
   vertical-align: middle;
   opacity: 0;
   color: #fff;
-  background-color: #5b7da2;
+  background-color: #7c95b9;
 }
 
 .looking-for-work:hover .work-reveal,
@@ -545,7 +556,7 @@ body {
 
 .social-text-icon:hover,
 .social-text-icon:focus {
-  border-bottom: 0.5em solid #5b7da2;
+  border-bottom: 0.5em solid #7c95b9;
 }
 
 .section-heading {
@@ -570,12 +581,12 @@ body {
 
 .highlight {
   text-decoration: none;
-  border-bottom: 0.1em solid #5b7da2;
+  border-bottom: 0.1em solid #7c95b9;
 }
 
 .highlight:hover {
-  -webkit-box-shadow: 0 0.1em 0 #5b7da2;
-  box-shadow: 0 0.1em 0 #5b7da2;
+  -webkit-box-shadow: 0 0.1em 0 #7c95b9;
+  box-shadow: 0 0.1em 0 #7c95b9;
 }
 
 .toggle[type='checkbox'] {
@@ -585,7 +596,7 @@ body {
 
 .toggle[type='checkbox']:focus + .toggle-helper {
   color: white;
-  background-color: #5b7da2;
+  background-color: #7c95b9;
 }
 
 .toggle[type='checkbox']:hover + .toggle-helper {
@@ -600,7 +611,7 @@ body {
   text-align: center;
   text-decoration: underline;
   color: white;
-  background-color: #373e48;
+  background-color: #69778b;
 }
 
 .toggle-content {
@@ -653,6 +664,10 @@ body {
   padding: 2em;
   -webkit-box-shadow: 0vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.75);
   box-shadow: 0vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.75);
+}
+
+.work-card {
+  border-left: 1em #69778b solid;
 }
 
 @media (max-width:300px) {
@@ -910,7 +925,7 @@ li.map-marker.map-marker-denver > a {
   text-align: center;
   color: #e3e3e3;
   border-radius: 1vmin;
-  background-color: #5b7da2;
+  background-color: #7c95b9;
 }
 
 .map-marker-info-inner:after {
@@ -924,7 +939,7 @@ li.map-marker.map-marker-denver > a {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   color: white;
-  border-top: 3vmin solid #5b7da2;
+  border-top: 3vmin solid #7c95b9;
   border-right: 2vmin solid transparent;
   border-left: 2vmin solid transparent;
 }
