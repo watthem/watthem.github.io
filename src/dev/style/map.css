@@ -35,10 +35,7 @@
     height: 2vmin;
     margin: -0.5vmin 0 0 -0.5vmin;
 
-    content: '';
-    animation-name: pop;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    content: '';   
 
     opacity: 0;
     border: 1px solid #373e48;

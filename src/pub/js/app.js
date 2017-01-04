@@ -1,3 +1,7 @@
+function toArray(element) {
+	return [].slice.call(element);
+}
+
 var animateMapHistory = true;
 
 var $window = $(window);
@@ -8,99 +12,99 @@ var left, right, simpsons;
 
 $('document').ready(function() {
 
-    left = document.querySelectorAll(".clouds-left");
-    right = document.querySelectorAll(".clouds-right");
-    simpsons = document.querySelector(".the-simpsons");
+	left = document.querySelectorAll(".clouds-left");
+	right = document.querySelectorAll(".clouds-right");
+	simpsons = document.querySelector(".the-simpsons");
 
 });
 
 function doSmoothScroll(event) {
-    event.preventDefault();
-    $('html,body').animate({
-        scrollTop: $(this.hash).offset().top
-    }, 1500);
+	event.preventDefault();
+	$('html,body').animate({
+		scrollTop: $(this.hash).offset().top
+	}, 1500);
 }
 
 function doIterateHistory() {
 
-    $('.map-marker-info').each(function(i) {
-        var self = this;
+	$('.map-marker-info').each(function(i) {
+		var self = this;
 
-        setTimeout(function() {
-            $(self).addClass('hovered');
-        }, 1500 * i);
-        i++;
-        setTimeout(function() {
-            $(self).removeClass('hovered');
-        }, 1500 * i);
-        //noinspection JSUnusedAssignment
-        i++;
-    });
+		setTimeout(function() {
+			$(self).addClass('hovered');
+		}, 1500 * i);
+		i++;
+		setTimeout(function() {
+			$(self).removeClass('hovered');
+		}, 1500 * i);
+		//noinspection JSUnusedAssignment
+		i++;
+	});
 }
 
 function doItForHer() {
 
-    if (left) {
-        left.forEach(function(element, index) {
-            element.classList.add("to-left");
-        });
-    }
-    if (right) {
-        right.forEach(function(element, index) {
-            element.classList.add("to-right");
-        });
-    }
-    if (simpsons)
-        simpsons.classList.add("simpsons-text-zoom");
+	if (left) {
+        toArray(left).forEach(function(element, index) {
+			element.classList.add("to-left");
+		});
+	}
+	if (right) {
+		toArray(right).forEach(function(element, index) {
+			element.classList.add("to-right");
+		});
+	}
+	if (simpsons)
+		simpsons.classList.add("simpsons-text-zoom");
 }
 
 function checkInView() {
 
-    var window_bottom_position;
-    var window_height, window_top_position;
+	var window_bottom_position;
+	var window_height, window_top_position;
 
-    window_height = $window.height();
-    window_top_position = $window.scrollTop();
+	window_height = $window.height();
+	window_top_position = $window.scrollTop();
 
-    if (window_top_position <= 0)
-        return;
+	if (window_top_position <= 0)
+		return;
 
-    window_bottom_position = (window_top_position + window_height);
+	window_bottom_position = (window_top_position + window_height);
 
-    $.each($animation_elements, function() {
-        var element_bottom_position, element_height, element_top_position, $element;
+	$.each($animation_elements, function() {
+		var element_bottom_position, element_height, element_top_position, $element;
 
-        $element = $(this);
-        element_height = $element.outerHeight();
-        element_top_position = $element.offset().top;
-        element_bottom_position = (element_top_position + element_height) + 500;
+		$element = $(this);
+		element_height = $element.outerHeight();
+		element_top_position = $element.offset().top;
+		element_bottom_position = (element_top_position + element_height) + 500;
 
-        //check to see if this current container is within viewport
-        if (element_bottom_position < window_top_position) {
-            $element.removeClass('in-view');
+		//check to see if this current container is within viewport
+		if (element_bottom_position < window_top_position) {
+			$element.removeClass('in-view');
 
-        } else if (element_top_position <= window_bottom_position) {
-            $element.addClass('in-view');
-            if ($element.hasClass("map-markers") && animateMapHistory) {
-                doIterateHistory();
-                animateMapHistory = false;
-            }
-            if ($element.hasClass("the-simpsons")) {
-                doItForHer();
-            }
-        } else {
-            $element.removeClass('in-view');
-        }
-    });
+		} else if (element_top_position <= window_bottom_position) {
+			$element.addClass('in-view');
+			if ($element.hasClass("map-markers") && animateMapHistory) {
+				doIterateHistory();
+				animateMapHistory = false;
+			}
+			if ($element.hasClass("the-simpsons")) {
+				doItForHer();
+			}
+		} else {
+			$element.removeClass('in-view');
+		}
+	});
 }
 
 function toggleResume() {
 
-    var $resume = $('#resume-toggle');
+	var $resume = $('#resume-toggle');
 
-    if (!$resume.prop('checked')) {
-        $resume.prop('checked', true);
-    }
+	if (!$resume.prop('checked')) {
+		$resume.prop('checked', true);
+	}
 }
 
 $window.on('scroll resize', checkInView);
