@@ -6,8 +6,8 @@ body
     height: 100%;
     margin: 0;
 
-    color: #e3e3e3;
-    background: #2d2d2d;
+    color: #e0e0e0;
+    background: #424242;
 }
 
 
@@ -18,11 +18,11 @@ body
 }
 .style-link
 {
-    color: #6b97ca;
+    color: #607d8b;
 }
 .style-link:visited
 {
-    color: #7c95b9;
+    color: #b0bec5;
 }
 .style-link:hover
 {
@@ -35,7 +35,8 @@ body
     width: 100%;
     height: 10vh;
 
-    background: #7c95b9;
+    background: #607d8b;
+    box-shadow: 0 5px 10px rgba(33, 33, 33, 0.75);
 }
 .navigation-list
 {
@@ -49,7 +50,8 @@ body
 
     justify-content: space-around;
 }
-.full-width{
+.full-width
+{
     max-width: 100%;
 }
 .nav
@@ -61,7 +63,7 @@ body
     transition: 500mss ease all;
     text-align: justify;
 
-    border-bottom: 4vmin solid #69778b;
+    border-bottom: 4vmin solid #212121;
 }
 .code-example:hover,
 .code-example:focus
@@ -87,17 +89,17 @@ body
     width: 50%;
 
     border: 0.4em double black;
-    background-color: #e3e3e3;
+    background-color: #e0e0e0;
 
     mix-blend-mode: lighten;
 }
 .city-overlay-header
 {
-    color: #7c95b9;
+    color: #b0bec5;
 }
 .boxed
 {
-    border: 0.4em dashed #333;
+    border: 0.4em dashed #212121;
 }
 .caption-heading
 {
@@ -120,7 +122,7 @@ body
 
 .next
 {
-    color: #7c95b9;
+    color: #b0bec5;
 }
 .next:after
 {
@@ -135,14 +137,14 @@ body
     content: '';
     transition: all 1500ms ease;
 
-    border-top: 1vmax solid #e3e3e3;
+    border-top: 1vmax solid #e0e0e0;
     border-right: 1vmax solid transparent;
     border-left: 1vmax solid transparent;
 }
 
 .next:hover:after
 {
-    border-top: 1vmax solid #7c95b9;
+    border-top: 1vmax solid #b0bec5;
 }
 .next:focus:after
 {
@@ -206,7 +208,7 @@ body
 
     opacity: 0;
     color: #fff;
-    background-color: #7c95b9;
+    background-color: #b0bec5;
 }
 .looking-for-work:hover .work-reveal,
 .looking-for-work:active .work-reveal,
@@ -223,8 +225,8 @@ body
 
     height: 90vh;
 
-    color: #e3e3e3;
-    background: #2d2d2d;
+    color: #e0e0e0;
+    background: #424242;
 
     -ms-flex-pack: center;
     justify-content: center;
@@ -237,7 +239,7 @@ body
     width: 20%;
 
     background-image: repeating-linear-gradient(230deg, transparent, transparent 25px, rgba(30, 30, 30, 0.11) 25px, rgba(30, 30, 30, 0.11) 50px);
-    box-shadow: 0 5px 10px #202020;
+    box-shadow: 0 5px 10px rgba(33, 33, 33, 0.75);
 }
 .intro-right
 {
@@ -247,7 +249,7 @@ body
     width: 20%;
 
     background-image: repeating-linear-gradient(130deg, transparent, transparent 25px, rgba(30, 30, 30, 0.11) 25px, rgba(30, 30, 30, 0.11) 50px);
-    box-shadow: 0 5px 10px #202020;
+    box-shadow: 0 5px 10px rgba(33, 33, 33, 0.75);
 }
 .intro-content
 {
@@ -318,11 +320,11 @@ body
 .social-text-icon:hover,
 .social-text-icon:focus
 {
-    border-bottom: 0.5em solid #7c95b9;
+    border-bottom: 0.5em solid #b0bec5;
 }
 .section-heading
 {
-    color: #b7c4c8;
+    color: #607d8b;
 }
 .bounce
 {
@@ -343,11 +345,11 @@ body
 {
     text-decoration: none;
 
-    border-bottom: 0.1em solid #7c95b9;
+    border-bottom: 0.1em solid #b0bec5;
 }
 .highlight:hover
 {
-    box-shadow: 0 0.1em 0 #7c95b9;
+    box-shadow: 0 0.1em 0 #b0bec5;
 }
 .toggle[type='checkbox']
 {
@@ -358,7 +360,7 @@ body
 .toggle[type='checkbox']:focus + .toggle-helper
 {
     color: white;
-    background-color: #7c95b9;
+    background-color: #b0bec5;
 }
 .toggle[type='checkbox']:hover + .toggle-helper
 {
@@ -377,7 +379,8 @@ body
     text-decoration: underline;
 
     color: white;
-    background-color: #69778b;
+    background-color: #212121;
+    box-shadow: 0 5px 10px rgba(33, 33, 33, 0.75);
 }
 .toggle-content
 {
@@ -389,10 +392,12 @@ body
 }
 .social-link-icon
 {
-    height: 10vmin;
-    padding: 0 1vmin;
+    height: 5em;
 
     transition: all 1s ease;
+
+    border-radius: 100%;
+    box-shadow: 0 5px 10px rgba(33, 33, 33, 0.75);
 }
 .social-link-icon:hover
 {
@@ -429,13 +434,11 @@ body
     font-size: large;
 
     padding: 2em;
-
-    box-shadow: 0vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.75);
 }
 
 .work-card
 {
-    border-left: 1em #69778b solid;
+    border-left: 1em #212121 solid;
 }
 @media (max-width:300px)
 {

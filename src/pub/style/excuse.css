@@ -1,3 +1,30 @@
+.excuse
+{
+    font-size: smaller;
+
+    position: relative;
+    top: 0;
+
+    display: inline-block;
+
+    width: 100%;
+
+    transition: all 1s ease;
+    text-align: left;
+
+    opacity: 0.1;
+    background: #2d2d2d;
+    box-shadow: 0 5px 10px rgba(33, 33, 33, 0.75);
+}
+
+.excuse:hover
+{
+    transition: all 1s ease;
+    transform: translateY(-20%);
+
+    opacity: 1;
+}
+
 .code
 {
     font-family: 'Consolas', monospace;
@@ -5,14 +32,12 @@
 
     display: inline;
 
-    width: auto;
     padding: 0 3px;
 
     white-space: normal;
-
-    border: 1px solid #606060;
-    border-radius: 2px;
 }
+
+
 
 .string.code
 {
@@ -54,33 +79,4 @@
 {
     color: #816648;
     border: 0;
-}
-
-div.code
-{
-    display: inline-block;
-
-    text-align: left;
-
-    background: #2d2d2d;
-}
-
-.excuse > div.code
-{
-    font-size: smaller;
-
-    position: relative;
-    top: 0;
-
-    transition: all 1s ease;
-
-    opacity: 0.1;
-}
-
-.excuse > div.code:hover
-{
-    transition: all 1s ease;
-    transform: translateY(-20%);
-
-    opacity: 1;
 }

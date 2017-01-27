@@ -4,7 +4,7 @@
 
     margin: auto;
 
-    background: #b7c4c8;
+    background: #b0bec5;
 }
 .map
 {
@@ -38,7 +38,7 @@
     content: '';   
 
     opacity: 0;
-    border: 1px solid #373e48;
+    border: 1px solid #eceff1;
     border-radius: 50%;
 }
 .map-marker:hover .map-marker-info
@@ -54,8 +54,7 @@
 
     text-indent: -9999px;
 
-    border-radius: 50%;
-    background-color: #ce606f;
+    border-radius: 50%;  
 }
 
 /*noinspection CssUnusedSymbol*/
@@ -74,8 +73,8 @@ li.map-marker.map-marker-scottsbluff > a
     width: 1vmin;
     height: 1vmin;
 
-    border: 0.5vmin solid #333;
-    background-color: #b7c4c8;
+    border: 0.5vmin solid #37474f;
+    background-color: #b0bec5;
 }
 .map-marker-laramie
 {
@@ -87,8 +86,8 @@ li.map-marker.map-marker-laramie > a
     width: 2vmin;
     height: 2vmin;
 
-    border: 0.5vmin solid #333;
-    background-color: #373e48;
+    border: 0.5vmin solid #b0bec5;
+    background-color: #37474f;
 }
 .map-marker-omaha
 {
@@ -100,8 +99,8 @@ li.map-marker.map-marker-omaha > a
     width: 3vmin;
     height: 3vmin;
 
-    border: 0.5vmin solid #333;
-    background-color: #b7c4c8;
+    border: 0.5vmin solid #37474f;
+    background-color: #b0bec5;
 }
 .map-marker-denver
 {
@@ -113,8 +112,8 @@ li.map-marker.map-marker-denver > a
     width: 4vmin;
     height: 4vmin;
 
-    border: 0.5vmin solid #333;
-    background-color: #373e48;
+    border: 0.5vmin solid #b0bec5;
+    background-color: #37474f;
 }
 .map-marker-info
 {
