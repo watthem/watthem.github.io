@@ -56,11 +56,10 @@ body
     color: #fff;
 }
 .code-example
-{
-    transition: 500mss ease all;
+{    
     text-align: justify;
-
-    border-bottom: 4vmin solid #212121;
+    margin-bottom:  1em;
+    border-top: 1em solid #212121;
     box-shadow: 0 0 4px rgba(33, 33, 33, 0.25), 0 4px 8px rgba(33, 33, 33, 0.75);
 }
 
@@ -468,7 +467,7 @@ body
 
 .work-card
 {
-    border-left: 1em #212121 solid;
+    border-left: .5em #212121 solid;
 }
 @media (max-width:300px)
 {
@@ -512,10 +511,7 @@ body
 
         padding-left: 0;
     }
-    .slim-text
-    {
-        margin: 2vh 0;
-    }
+  
 }
 @media (min-width:600px)
 {
@@ -542,10 +538,7 @@ body
 
         padding-left: 0;
     }
-    .slim-text
-    {
-        margin: 2vh 0;
-    }
+   
 }
 @media (min-width:900px)
 {
@@ -564,10 +557,7 @@ body
 
         width: 80%;
     }
-    .slim-text
-    {
-        margin: 0;
-    }
+   
     .offset-left
     {
         left: 0;
@@ -578,7 +568,7 @@ body
     {
         right: -20%;
 
-        padding-left: 5vmin;
+        
     }
 }
 @media (min-width:1200px)
@@ -592,13 +582,13 @@ body
     {
         position: relative;
 
-        width: 50%;
+        width: 70%;
     }
     .offset-right
     {
-        right: -50%;
+        right: -25%;
 
-        padding-left: 5vmin;
+        
     }
 }
 @media (min-width:1800px)
