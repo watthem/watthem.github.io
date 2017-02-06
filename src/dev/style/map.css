@@ -1,221 +1,34 @@
-.map-container
-{
-    position: relative;
-
-    margin: auto;
-
-    background: #b0bec5;
+.animate-bounce-in{animation-name:bounce-in;animation-duration:0.75s;}
+.hovered{display:block;}
+.map-container{position:relative;margin:auto;background:#b0bec5;}
+.map-marker a{display:block;width:1vmin;height:1vmin;text-indent:-9999px;border-radius:50%;}
+.map-marker-denver{top:70%;left:15%;}
+.map-marker-info h2{padding:3vmin;text-align:center;color:#e3e3e3;border-radius:1vmin;background-color:#7c95b9;}
+.map-marker-info-inner:after{position:absolute;top:100%;left:50%;width:0;height:0;content:'';transform:translateX(-50%);color:white;border-top:3vmin solid #7c95b9;border-right:2vmin solid transparent;border-left:2vmin solid transparent;}
+.map-marker-info{position:absolute;z-index:999;bottom:0;left:50%;display:none;width:auto;transform:translate(-50%,-5vmin);}
+.map-marker-laramie{top:50%;left:10%;}
+.map-marker-omaha{top:52%;left:87%;}
+.map-marker-scottsbluff{top:46%;left:28%;}
+.map-marker-{top:35%;left:65%;}
+.map-marker:after{position:absolute;top:0;left:0;width:2vmin;height:2vmin;margin:-0.5vmin 0 0 -0.5vmin;content:'';opacity:0;border:1px solid #eceff1;border-radius:50%;}
+.map-marker:hover .map-marker-info{display:block;}
+.map-markers{position:absolute;width:100%;height:100%;margin:0;padding:0;list-style:none;}
+.map-marker{position:absolute;}
+.map{position:relative;}
+li.map-marker.map-marker-denver > a{width:4vmin;height:4vmin;border:0.5vmin solid #b0bec5;background-color:#37474f;}
+li.map-marker.map-marker-laramie > a{width:2vmin;height:2vmin;border:0.5vmin solid #b0bec5;background-color:#37474f;}
+li.map-marker.map-marker-omaha > a{width:3vmin;height:3vmin;border:0.5vmin solid #37474f;background-color:#b0bec5;}
+li.map-marker.map-marker-scottsbluff > a{width:1vmin;height:1vmin;border:0.5vmin solid #37474f;background-color:#b0bec5;}
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
 }
-.map
-{
-    position: relative;
-}
-.map-markers
-{
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-.map-marker
-{
-    position: absolute;
-}
-.map-marker:after
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 2vmin;
-    height: 2vmin;
-    margin: -0.5vmin 0 0 -0.5vmin;
-
-    content: '';   
-
-    opacity: 0;
-    border: 1px solid #eceff1;
-    border-radius: 50%;
-}
-.map-marker:hover .map-marker-info
-{
-    display: block;
-}
-.map-marker a
-{
-    display: block;
-
-    width: 1vmin;
-    height: 1vmin;
-
-    text-indent: -9999px;
-
-    border-radius: 50%;  
-}
-
-/*noinspection CssUnusedSymbol*/
-.map-marker-
-{
-    top: 35%;
-    left: 65%;
-}
-.map-marker-scottsbluff
-{
-    top: 46%;
-    left: 28%;
-}
-li.map-marker.map-marker-scottsbluff > a
-{
-    width: 1vmin;
-    height: 1vmin;
-
-    border: 0.5vmin solid #37474f;
-    background-color: #b0bec5;
-}
-.map-marker-laramie
-{
-    top: 50%;
-    left: 10%;
-}
-li.map-marker.map-marker-laramie > a
-{
-    width: 2vmin;
-    height: 2vmin;
-
-    border: 0.5vmin solid #b0bec5;
-    background-color: #37474f;
-}
-.map-marker-omaha
-{
-    top: 52%;
-    left: 87%;
-}
-li.map-marker.map-marker-omaha > a
-{
-    width: 3vmin;
-    height: 3vmin;
-
-    border: 0.5vmin solid #37474f;
-    background-color: #b0bec5;
-}
-.map-marker-denver
-{
-    top: 70%;
-    left: 15%;
-}
-li.map-marker.map-marker-denver > a
-{
-    width: 4vmin;
-    height: 4vmin;
-
-    border: 0.5vmin solid #b0bec5;
-    background-color: #37474f;
-}
-.map-marker-info
-{
-    position: absolute;
-    z-index: 999;
-    bottom: 0;
-    left: 50%;
-
-    display: none;
-
-    width: auto;
-
-    transform: translate(-50%, -5vmin);
-}
-
-/*noinspection CssUnusedSymbol*/
-.hovered
-{
-    display: block;
-}
-.map-marker-info h2
-{
-    padding: 3vmin;
-
-    text-align: center;
-
-    color: #e3e3e3;
-    border-radius: 1vmin;
-    background-color: #7c95b9;
-}
-.map-marker-info-inner:after
-{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-
-    width: 0;
-    height: 0;
-
-    content: '';
-    transform: translateX(-50%);
-
-    color: white;
-    border-top: 3vmin solid #7c95b9;
-    border-right: 2vmin solid transparent;
-    border-left: 2vmin solid transparent;
-}
-@keyframes fade
-{
-    from
-    {
-        opacity: 0;
-    }
-    to
-    {
-        opacity: 1;
-    }
-}
-@keyframes bounce-in
-{
-    0%,
-    20%,
-    40%,
-    60%,
-    80%,
-    100%
-    {
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    0%
-    {
-        transform: scale3d(0.3, 0.3, 0.3);
-
-        opacity: 0;
-    }
-    20%
-    {
-        transform: scale3d(1.1, 1.1, 1.1);
-    }
-    40%
-    {
-        transform: scale3d(0.9, 0.9, 0.9);
-    }
-    60%
-    {
-        transform: scale3d(1.03, 1.03, 1.03);
-
-        opacity: 1;
-    }
-    80%
-    {
-        transform: scale3d(0.97, 0.97, 0.97);
-    }
-    100%
-    {
-        transform: scale3d(1, 1, 1);
-
-        opacity: 1;
-    }
-}
-.animate-bounce-in
-{
-    animation-name: bounce-in;
-    animation-duration: 0.75s;
+@keyframes bounce-in{
+    0%,20%,40%,60%,80%,100%{transition-timing-function:cubic-bezier(0.215,0.61,0.355,1);}
+    0%{transform:scale3d(0.3,0.3,0.3);opacity:0;}
+    20%{transform:scale3d(1.1,1.1,1.1);}
+    40%{transform:scale3d(0.9,0.9,0.9);}
+    60%{transform:scale3d(1.03,1.03,1.03);opacity:1;}
+    80%{transform:scale3d(0.97,0.97,0.97);}
+    100%{transform:scale3d(1,1,1);opacity:1;}
 }
