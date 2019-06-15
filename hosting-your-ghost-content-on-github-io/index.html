@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Hosting your Ghost Content on GitHub.io</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css%3Fv=7b17be302b.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="amp/index.html" />
+    
+    <meta property="og:site_name" content="Portfolio by Matthew Hendricks " />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Hosting your Ghost Content on GitHub.io" />
+    <meta property="og:description" content="When I set out to create my technical writing portfolio, I knew that I would be eventually hosting from my GitHub repository using GitHub Pages. And I knew that I wanted to keep the same awesome writing environment I&#x27;d enjoyed with Medium.com – so using Ghost to management my content" />
+    <meta property="og:url" content="http://localhost:2500/hosting-your-ghost-content-on-github-io/" />
+    <meta property="article:published_time" content="2019-06-14T22:17:00.000Z" />
+    <meta property="article:modified_time" content="2019-06-15T01:23:41.000Z" />
+    <meta property="article:tag" content="ghost" />
+    <meta property="article:tag" content="web" />
+    <meta property="article:tag" content="blog" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Hosting your Ghost Content on GitHub.io" />
+    <meta name="twitter:description" content="When I set out to create my technical writing portfolio, I knew that I would be eventually hosting from my GitHub repository using GitHub Pages. And I knew that I wanted to keep the same awesome writing environment I&#x27;d enjoyed with Medium.com – so using Ghost to management my content" />
+    <meta name="twitter:url" content="http://localhost:2500/hosting-your-ghost-content-on-github-io/" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Matthew Hendricks" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="ghost, web, blog" />
+    <meta name="twitter:site" content="@watthem" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Portfolio by Matthew Hendricks ",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2500/favicon.ico",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Matthew Hendricks",
+        "url": "http://localhost:2500/author/matthew/",
+        "sameAs": []
+    },
+    "headline": "Hosting your Ghost Content on GitHub.io",
+    "url": "http://localhost:2500/hosting-your-ghost-content-on-github-io/",
+    "datePublished": "2019-06-14T22:17:00.000Z",
+    "dateModified": "2019-06-15T01:23:41.000Z",
+    "keywords": "ghost, web, blog",
+    "description": "When I set out to create my technical writing portfolio, I knew that I would be eventually hosting from my GitHub repository using GitHub Pages. And I knew that I wanted to keep the same awesome writing environment I&#x27;d enjoyed with Medium.com – so using Ghost to management my content",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2500/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.14" />
+    <link rel="alternate" type="application/rss+xml" title="Portfolio by Matthew Hendricks " href="../rss/index.html" />
+</head>
+
+<body class="post-template tag-ghost-tag tag-web tag-blog nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">ＭＥＮＵ</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        <li class="nav-about"><a href="../about/index.html">about</a></li>
+        <li class="nav-cv-resume"><a href="../cv-resume/index.html">cv/resume</a></li>
+        <li class="nav-for-hire"><a href="../technical-writing/index.html">for hire</a></li>
+        <li class="nav-work-examples"><a href="../work/index.html">work examples</a></li>
+        <li class="nav-consultations"><a href="../consultations/index.html">consultations</a></li>
+        <li class="nav-linkedin"><a href="http://linkedin.com/in/mscohendricks">linkedin 🔗</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="../rss/index.html">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+    <div class="site-wrapper">
+
+         
+      <header class="main-header post-head no-cover">
+    <div class="main-header-background-square"></div>
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="../index.html">
+            <div class="watthem-logo">
+                <span class="first">Ｗ</span>
+                <span class="middle">ＡＴＴＨＥ</span>
+                <span class="last">Ｍ</span>
+            </div>
+        </a>
+        <a class="menu-button icon-menu" href="index.html#"><span class="word">ＭＥＮＵ</span></a>
+    </nav>
+    </header>
+
+    <main class="content" role="main">
+        <article class="post tag-ghost-tag tag-web tag-blog">
+
+            <header class="post-header">
+                <h1 class="post-title">Hosting your Ghost Content on GitHub.io</h1>
+                <section class="post-meta">
+                    <time class="post-date" datetime="2019-06-14">14 June 2019</time>
+                     on <a href="../portfolio/ghost-tag/index.html">ghost</a>, <a href="../portfolio/web/index.html">web</a>, <a href="../portfolio/blog/index.html">blog</a>
+                </section>
+            </header>
+
+            <section class="post-content">
+                <p>When I set out to create my technical writing portfolio, I knew that I would be eventually hosting from my GitHub repository using <a href="https://pages.github.com/">GitHub Pages</a>. And I knew that I wanted to keep the same awesome writing environment I'd enjoyed with <a href="https://medium.com">Medium.com</a> – so using Ghost to management my content was an obvious choice for me.</p><p>But I didn't stop to think about how I'd convert my data from Ghost posts to utilize the free static site hosting service on my GitHub page. After all, Ghost uses a local MySQL database to store its content and must be deployed by a managed web service running Node.js.  But GitHub pages isn't a fully robust virtual server - it's a simple web service that can only deploy posts and pages as static HTML files.</p><h3 id="so-my-options-were-a-bit-restricted-my-own-choosiness">So my options were a bit restricted my own choosiness</h3><p>First of all, I couldn't Host the Ghost engine the official <a href="https://ghost.org/pricing/" rel="nofollow"><strong>Ghost(Pro)</strong></a> managed service because I need the content to be built as static files to use for GitHub Pages.</p><p>The first time I set up a Ghost site, I simply configured a LAMP droplet at DigtialOcean and administrator the deployments through my virtual server.  This worked well for a while, but hosting costs became a huge factor. Especially during earlier development and administration; each update to your settings or content is going to use resources on the virtual server and this starts to add up over time.  And even then, similar to GhostPro, I still need to <em>somehow </em>build the files to HTML.  At this point, there seemed to be no advantage to hosting the engine using a fully fledged web server.</p><p>So there I thought was only one option to choose:</p><ul><li>Host the Ghost engine locally and convert the files to static HTML  </li></ul><p>This was an attractive option, but I became a little paralyzed as I looked at my static generation options. Jekyll, Gatsby, Hugo, Gridsome – ugh, how much skin does this cat have?</p><figure class="kg-card kg-image-card"><img src="https://images.unsplash.com/photo-1525538182201-02cd1909effb?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" class="kg-image" alt="Repetition, playfulness, pop art, these are a few of my favorite things."><figcaption>Photo by <a href="https://unsplash.com/@joshstyle?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">JOSHUA COLEMAN</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption></figure><p>I searched a little about how other's tackle this problem and while Ghost API is very well documented and easy for me to use with other projects, I felt it was a bit overkill to spend time setting up a static site framework to host a handful of markdown files that were already built as a web page in my local environment anyway!</p><p>So, deciding to stick solely with Ghost, I also came across out-of-date utilities that supposedly helped with this problem by downloading the pages to simply throw on a web server, which seemed like both a straightforward and a puzzling solution to me – why do I need <em>another</em> utility?  The web pages already work in my browser locally.  And my experience doing QA/Support for public ISPs and hosting providers made me comfortable using the standard <strong>wget</strong> utility to download web pages, files, and images from the web using the command line, and is essentially what these other utilities were doing.  </p><p>Through late-night trial and error with <strong>wget</strong>, I was able to easily build and commit the entire website you see today.  And then after I had to go back and retrace my steps, I thought more attention could be given to the solution, so here I am writing to you.</p><h2 id="setting-up-ghost-local">Setting Up Ghost Local</h2><p>I'll keep this part brief, but should be enough to help get ghost running local for you to play if you've never used it before.</p><h3 id="1-install-node-js">1. Install Node.js</h3><p>Download and install the latest Node version from their <a href="https://nodejs.org/en/" rel="nofollow noopener">official website</a>.</p><h3 id="2-install-ghost-cli-command-line-tool-">2. Install Ghost CLI (command line tool)</h3><p>Using <a href="https://www.npmjs.com/" rel="nofollow noopener">npm package manager</a>, open your terminal and execute the following commands to install the latest <a href="https://github.com/TryGhost/Ghost-CLI" rel="nofollow noopener">ghost CLI</a> </p><pre><code>$ sudo npm install -g ghost-cli@latest</code></pre><h3 id="3-install-ghost-locally-using-command-line-tool">3. Install Ghost locally using command line tool</h3><p>Wherever you'd like your local host to reside, create an empty folder for your site to install Ghost, e.g.,</p><pre><code>$ mkdir ghost-blog</code></pre><p>Now, navigate into the <code>ghost-blog</code> folder and install local version of ghost.</p><p><code>$ ghost install local</code></p><p>Wait for the installation to complete and ghost will be automatically started in your terminal.</p><figure class="kg-card kg-image-card"><img src="../content/images/2019/06/image-1.png" class="kg-image"></figure><p>When Ghost is running, you'll be able to preview a copy of your site using the theme you chose when you access the admin interface.  This environment is going to be your little "sandbox" where you can stage and preview your site <em>before</em> you upload files to GitHub.</p><h2 id="the-wget-command">THE WGET COMMAND</h2><p>Generally speaking, if you simply need a way to request a static version of <em>any</em> hosted document, then you just need to use <code>wget</code> to download your files locally. Assuming your local ghost site looks perfect (and I assure you, <em>it does), </em>you'll be ready to download your site using wget and upload it to GitHub.</p><p>Running the following command from your terminal will download a static copy of each file linked in the URL and can be parameterized to ensure all your content and links work the same as hosted at the development version:</p><pre><code>$ wget -r -nH -P dist -E -k localhost:port</code></pre><h3 id="let-s-break-down-this-command">Let's break down this command</h3><p>(each option is cAse seNsiTiVe)</p><ul><li><strong>wget: 	</strong>a standard utility for fetching web site data from the command line.  If you're using mac or linux, you probably have this installed by default.  If not, it's pretty straightforward to ... uh, get.</li><li><strong>-r:	</strong>we're instructing <code>wget</code> to download files in a recursive manner – meaning wget will first requested the primary document at the given URL (http://localhost:2368/), and then download each local document linked.  This makes sure we get all the referenced libraries, style sheets, important children pages linked in the site.</li><li><strong>-nH: 	</strong>disables host-prefixed file names (no need to include <code>localhost</code> in output file name).</li><li><strong>-P:	</strong>gets all files, including images so the desired document looks just like you published.</li><li><strong>dist:	t</strong>he relative folder you wish to output the contents.</li><li><strong>-E: </strong>	adds HTML/CSS extension to the destination file type.</li><li><strong>-k:	e</strong>nsures links are converted to local files.</li><li><strong>localhost:port:  </strong>the default location of your ghost install is usually http://localhost:2368.</li></ul><blockquote><em><strong>Tip</strong>:  I'm using port </em><code>2500</code><em>, but your configuration is probably different – the port your ghost instance is running should be listed when you start ghost with <code>ghost start</code>.  If you have issues, check your ghost directory <code>config.development.json</code> for your project's port value.</em></blockquote><figure class="kg-card kg-image-card"><img src="../content/images/2019/06/image-2.png" class="kg-image"></figure><h3 id="when-the-command-finishes">When the command finishes</h3><p>You will see your links converted relative to the folder used in the command (should be in a folder named <code>dist</code> if you used my example above).  Each "post" or "page" will be organized in a unique folder and contain an index.html file for each.</p><figure class="kg-card kg-image-card"><img src="../content/images/2019/06/image-9.png" class="kg-image"></figure><p>Since these are local and static HTML links, you can open any of the index.html files generated and open them directly in your browser to preview. If there are errors, use your browser developer tools to debug them, and check that all of your links and extension are set properly.</p><h2 id="conclusion">Conclusion </h2><p>You can now host your static Ghost content to your <a href="https://pages.github.com/">https://pages.github.com</a> account!  After your push to the <code>master</code> branch, your Project Pages site will be available at <code>http(s)://&lt;username&gt;.github.io/&lt;projectname&gt;</code>.   </p><p>Check out <a href="https://help.github.com/en/categories/github-pages-basics">GitHub Pages Basics</a> for help deploying to your pages.</p>
+            </section>
+
+            <footer class="post-footer">
+
+
+
+                <section class="author">
+                    <h4><a href="../author/matthew/index.html">Matthew Hendricks</a></h4>
+
+                    <p>Read <a href="../author/matthew/index.html">more posts</a> by this author.</p>
+                    <div class="author-meta">
+                        
+                        
+                    </div>
+                </section>
+
+
+                <section class="share">
+                    <h4>Share this post</h4>
+                    <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Hosting%20your%20Ghost%20Content%20on%20GitHub.io&amp;url=http://localhost:2500/hosting-your-ghost-content-on-github-io/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2500/hosting-your-ghost-content-on-github-io/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2500/hosting-your-ghost-content-on-github-io/"
+                        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden">Google+</span>
+                    </a>
+                </section>
+
+
+            </footer>
+        </article>
+    </main>
+
+    <aside class="read-next">
+        <a class="read-next-story prev no-cover"
+            href="../untitled/index.html">
+            <section class="post">
+                <h3>My writing envionrment</h3>
+                <p>Google KeepEverything I write starts as a note, and it's nice to see the archive of old ideas as&hellip;</p>
+            </section>
+        </a>
+    </aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../index.html">Portfolio by Matthew Hendricks </a> &copy; 2019</section>
+            <section class="poweredby">Powered by <a href="https://sellfy.com/p/Acjr">Ghost + Boo</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js%3Fv=7b17be302b"></script>
+    <script type="text/javascript" src="../assets/js/index.js%3Fv=7b17be302b"></script>
+    <script src="https://cdn.jsdelivr.net/mobile-detect.js/1.3.3/mobile-detect.min.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+</body>
+
+</html>
