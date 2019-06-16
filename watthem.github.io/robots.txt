@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://localhost:2500/sitemap.xml
+Disallow: /ghost/
+Disallow: /p/
