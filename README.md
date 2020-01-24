@@ -1,3 +1,17 @@
-Add static files here. Files in this directory will be copied directly to `dist` folder during build. For example, /static/robots.txt will be located at https://yoursite.com/robots.txt.
+# Matthew Hendricks Portfolio
 
-This file should be deleted.
+Built using gridsome.org
+
+Ghost used as headless CRM.
+
+Gridsome templates host various types of projects built from Markdown files:
+
+* Technical Writing
+* Creative Content
+* CSS/Javascript and Website demos
+
+I'm a technical writer and project manager with 12+ years experience working for internet startups.
+
+Check out http://matthewhendricks.net.
+
+Have a good day :)
