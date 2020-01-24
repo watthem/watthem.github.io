@@ -1,8 +1,3 @@
-# watthem.github.io
-Ghost Site for my Technical Writing Portfolio
+Add static files here. Files in this directory will be copied directly to `dist` folder during build. For example, /static/robots.txt will be located at https://yoursite.com/robots.txt.
 
-Content managed through Ghost admin interface.
-
-Site built using wget (https://watthem.github.io/hosting-your-ghost-content-on-github-io/index.html)
-
-`wget -r -nH -P watthem.github.io  -E -k localhost:2500`
+This file should be deleted.
