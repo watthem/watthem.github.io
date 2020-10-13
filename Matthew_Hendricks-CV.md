@@ -1,6 +1,6 @@
 # Matthew Hendricks' CV
 
-⚡ Knowledge Worker, Technical Writer, Product Manager—focuses on development of technical support solutions for product teams | values opportunities for Collaborative Communication
+Knowledge Worker, Technical Writer, Product Manager — focuses on development of technical support solutions for product teams | values opportunities for Collaborative Communication
 
 **Work Phone:** +1 ‪ (646) 694-2062
 
@@ -9,6 +9,8 @@
 **Email:** [mscotthendricks@gmail.com](mailto:mscotthendricks@gmail.com)
 
 **Portfolio:** [matthewhendricks.net/work](https://www.matthewhendricks.net/work)
+
+---
 
 ---
 
@@ -45,7 +47,7 @@ April 2017 - December 2018
 
 - Led a small remote team responsible for pre-sales, onboarding, billing, and support for Speedtest Custom and Speedtest Host infrastructure clients on topics of HTML5, CSS, JavaScript, PHP, SQL, Linux, HTTP, SSL/TLS.
 - Developed and optimized customer success process strategies used in Salesforce, JIRA, and Zendesk.
-- Built custom support enhancements for a support team using Zendesk, Salesforce, and custom Ookla API with Javascript, Vue, HTML, CSS.
+- Built custom support enhancements for a support team using Zendesk, Salesforce, and custom Ookla API with Javascript, Vue, HTML, CSS and checked in project updates using Git pull requests.
 - Achieved $3mil in annual sales by managing 1200 accounts licensed for a JavaScript product designed for global ISPs, data centers, equipment manufacturers, and market vendors interested in client/server network performance testing.
 
 ### Product Manager II / Technical Support Supervisor
@@ -56,7 +58,7 @@ May 2010 - June 2016
 
 - Collaborated with Director of Product Management to drive the product life cycle for a team of 5 developers during a major rewrite and product launch of a developer-friendly desktop application for day trading built using .NET and C#.
 - Researched root cause analysis and provided customer technical support of critical bugs while offering confident recommendations for process improvements on topics of C# and WPF and developer best practices.
-- Composed release notes for various release management milestones (14 beta, 2 release candidates, and 1 major release version) while prioritizing website updates for consumer-focused technical documentation.
+- Followed code updates in Git repo and composed release notes for various release management milestones (14 beta, 2 release candidates, and 1 major release version) while prioritizing website updates for consumer-focused technical documentation.
 - Defined and prioritized product cases for the development roadmap by documenting specifications, creating and assigning tasks in JIRA, and establishing targets and outcomes.
 - Developed standard operating procedures for the customer success team’s technical support representatives.
 - Communicated informational changes in software updates, known issues and troubleshooting, and major milestones to a team of support representatives.
@@ -108,7 +110,3 @@ Confluence | Ghost | HelpSpot | JIRA | Notion | OoklaServer | TCP/IP | Trello | 
 - **Code:** [github.com/watthem](http://github.com/watthem)
 - **Writing:** [medium.com/@thoughtabout](http://medium.com/@thoughtabout)
 - **CSS:** [codepen.io/watthem](https://codepen.io/watthem)
-
-## Interests
-
-Running, Meditation, Creative Writing, Guitar, Piano, Notion Community
