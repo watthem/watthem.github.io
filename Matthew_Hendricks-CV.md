@@ -1,6 +1,6 @@
 # Matthew Hendricks' CV
 
-⚡ Knowledge Worker, Technical Writer, Product Manager — focuses on development of technical support solutions for product teams | values opportunities for Collaborative Communication
+⚡ Knowledge Worker, Technical Writer, Product Manager—focuses on development of technical support solutions for product teams | values opportunities for Collaborative Communication
 
 **Work Phone:** +1 ‪ (646) 694-2062
 
