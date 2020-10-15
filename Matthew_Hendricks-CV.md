@@ -84,7 +84,7 @@ May 2007 - May 2010
 
 ### Product Management
 
-Customer Success | Feature specifications | Kanban | Microcopy | Problem solving | Release Management | Roadmap | Software Documentation | UX Strategy
+Customer Success | Feature specifications | Kanban | Microcopy | Problem solving | Release Management | Roadmap | Software Development | UX Strategy
 
 ### Technical Writing
 
