@@ -1,14 +1,14 @@
 # Matthew Hendricks' CV
 
-⚡ **Knowledge Worker, Technical Writer, Product Manager** — Focused on client solutions for product teams | values opportunities for Collaborative Communication
+**Knowledge Worker, Technical Writer, Product Manager** — Focused on client solutions for product teams | values opportunities for Collaborative Communication
 
-**Work Phone:** +1 ‪ (646) 694-2062
+**Work Phone:** 646-694-2062
 
 **Location:** Seattle, WA (98125)
 
 **Email:** [mscotthendricks@gmail.com](mailto:mscotthendricks@gmail.com)
 
-**Portfolio:** [matthewhendricks.net/work](https://www.matthewhendricks.net/work)
+**Portfolio:** [matthewhendricks.net/work/](https://www.matthewhendricks.net/work)
 
 ---
 
@@ -18,7 +18,7 @@
 
 ### Product Manager II / Technical Support Supervisor
 
-**NinjaTrader** ([ninjatrader.com](http://ninjatrader.com/)) Denver, CO.
+**NinjaTrader** ([ninjatrader.com](https://www.ninjatrader.com/)) Denver, CO.
 
 May 2010 - June 2016
 
@@ -36,14 +36,14 @@ May 2010 - June 2016
 
 April 2017 - December 2018
 
-- Acted as customer voice for Speedtest Custom, collecting feature requests from customers and communicating product and engineer teams for products developed for web, mobile and desktop.
+- Acted as customer voice for Speedtest Custom, collecting feature requests from customers and communicating feedback to product and engineer teams for products developed for web, mobile and desktop.
 - Led a small remote team responsible for B2B and B2C pre-sales, on-boarding, billing, and support for Speedtest Custom and Speedtest Host infrastructure clients by answering and documenting modern technology topics of HTML5, CSS, JavaScript, PHP, SQL, Linux, Windows Server, HTTP, SSL/TLS.
 - Developed and optimized customer success process strategies used for technical services goals by tracking customer support and sales metrics using custom reports and dashboards built with Google Sheets, Salesforce, and Zendesk.
 - Managed $3mil in annual sales by tracking 1200 accounts licensed for a JavaScript product designed for global ISPs, data centers, equipment manufacturers, and market vendors interested in client/server network performance testing.
 
 ### Contract Technical Writer at Microsoft
 
-**Apex Systems** ([apexsystems.com](http://apexsystems.com/)) Redmond, WA.
+**Apex Systems** ([apexsystems.com](https://www.apexsystems.com/)) Redmond, WA.
 
 March 2020 - May 2020
 
@@ -54,7 +54,7 @@ March 2020 - May 2020
 
 ### Contract Technical Writer at Premera
 
-**AIM Consulting** ([aimconsulting.com](http://aimconsulting.com/)) Bothell, WA.
+**AIM Consulting** ([aimconsulting.com](https://www.aimconsulting.com/)) Bothell, WA.
 
 April 2019 - December 2019
 
@@ -104,8 +104,8 @@ Confluence | Ghost | HelpSpot | JIRA | Notion | OoklaServer | TCP/IP | Trello | 
 
 > Collections of technical writing, work examples, and creative work
 
-- **Work portfolio:** [matthewhendricks.net/work](https://www.matthewhendricks.net/work)
+- **Work portfolio:** [matthewhendricks.net/work](https://www.matthewhendricks.net/work/)
 - **Social:** [linkedin.com/in/watthem](https://www.linkedin.com/in/watthem)
-- **Writing:** [medium.com/@thoughtabout](https://www.medium.com/@thoughtabout)
+- **Writing:** [medium.com/thoughtabout](https://www.medium.com/@thoughtabout)
 - **CSS:** [codepen.io/watthem](https://www.codepen.io/watthem)
 - **Code:** [github.com/watthem](https://www.github.com/watthem)
