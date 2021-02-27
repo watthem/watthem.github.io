@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: matthewhendricks.net
+Token: 819bf5d8f8df0ffa3a79e10fb8499f727135b008f4d7d5d2a70842bcdf1edd07
