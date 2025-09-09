@@ -374,3 +374,47 @@ footer p {
     font-size: 1.5rem;
   }
 }
+
+/* Parenting Context Banner */
+.parenting-banner {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border: 1px solid #4a5568;
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.banner-emoji {
+  font-size: 1.25rem;
+}
+
+.banner-text {
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .parenting-banner {
+    padding: 0.75rem 1rem;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .banner-text {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
