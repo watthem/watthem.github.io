@@ -166,7 +166,7 @@ nav.top a.cta:hover {
 
 .card ul {
   margin: 0.75rem 0;
-  padding-left: 1.25rem;
+  padding-left: 2rem;
   list-style: disc;
 }
 
@@ -227,7 +227,7 @@ nav.top a.cta:hover {
 
 .metric-card ul {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 2rem;
 }
 
 .metric-card li {
@@ -269,6 +269,19 @@ nav.top a.cta:hover {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 0.75rem;
+}
+
+/* General List Styling */
+body > .wrap > ul,
+h2 + ul {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+body > .wrap > ul li,
+h2 + ul li {
+  margin-bottom: 0.5rem;
+  color: #c7c7ce;
 }
 
 /* Utility Classes */
