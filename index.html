@@ -1,259 +1,427 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<meta charset="utf-8">
-<title>Matthew Hendricks — SaaS Founder • Systems Engineer • Trading Tech</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="description" content="Building production SaaS (RapidWire, GetNotes) and next-gen trading infrastructure (Matchstick). TypeScript systems, AI workflows, and high-performance Rust engineering.">
-<meta name="author" content="Matthew Hendricks">
-<meta name="keywords" content="saas founder, rust developer, typescript expert, matchstick trading engine, rapidwire, getnotes, trading infrastructure, high-performance systems, cloudflare workers, systems engineer">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="googlebot" content="index, follow">
-<meta name="format-detection" content="telephone=no">
-<meta http-equiv="x-ua-compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Matthew Hendricks — SaaS Founder • Systems Engineer • Trading Tech
+    </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Building production SaaS (RapidWire, GetNotes) and next-gen trading infrastructure (Matchstick). TypeScript systems, AI workflows, and high-performance Rust engineering."
+    />
+    <meta name="author" content="Matthew Hendricks" />
+    <meta
+      name="keywords"
+      content="saas founder, rust developer, typescript expert, matchstick trading engine, rapidwire, getnotes, trading infrastructure, high-performance systems, cloudflare workers, systems engineer"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
 
-<!-- Canonical URL -->
-<link rel="canonical" href="https://matthewhendricks.net/">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://matthewhendricks.net/" />
 
-<!-- Favicons -->
-<link rel="icon" type="image/png" sizes="32x32" href="/icon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#007acc">
-<meta name="msapplication-TileColor" content="#007acc">
-<meta name="msapplication-config" content="/browserconfig.xml">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#007acc" />
+    <meta name="msapplication-TileColor" content="#007acc" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Matthew Hendricks">
-<meta property="og:title" content="Matthew Hendricks — SaaS Founder • Systems Engineer • Trading Tech">
-<meta property="og:description" content="Production SaaS platforms (RapidWire, GetNotes) + building Matchstick trading engine in public. TypeScript, AI systems, and high-performance Rust.">
-<meta property="og:url" content="https://matthewhendricks.net/">
-<meta property="og:image" content="https://matthewhendricks.net/hero.png">
-<meta property="og:image:secure_url" content="https://matthewhendricks.net/hero.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Matthew Hendricks - SaaS Founder and Systems Engineer">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Matthew Hendricks" />
+    <meta
+      property="og:title"
+      content="Matthew Hendricks — SaaS Founder • Systems Engineer • Trading Tech"
+    />
+    <meta
+      property="og:description"
+      content="Production SaaS platforms (RapidWire, GetNotes) + building Matchstick trading engine in public. TypeScript, AI systems, and high-performance Rust."
+    />
+    <meta property="og:url" content="https://matthewhendricks.net/" />
+    <meta property="og:image" content="https://matthewhendricks.net/hero.png" />
+    <meta
+      property="og:image:secure_url"
+      content="https://matthewhendricks.net/hero.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Matthew Hendricks - SaaS Founder and Systems Engineer"
+    />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@watthem">
-<meta name="twitter:creator" content="@watthem">
-<meta name="twitter:title" content="Matthew Hendricks — SaaS • Trading Tech • Rust">
-<meta name="twitter:description" content="Production SaaS: RapidWire, GetNotes • Building Matchstick trading engine in public • TypeScript + Rust systems.">
-<meta name="twitter:image" content="https://matthewhendricks.net/hero.png">
-<meta name="twitter:image:alt" content="Matthew Hendricks - SaaS Founder and Systems Engineer">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@watthem" />
+    <meta name="twitter:creator" content="@watthem" />
+    <meta
+      name="twitter:title"
+      content="Matthew Hendricks — SaaS • Trading Tech • Rust"
+    />
+    <meta
+      name="twitter:description"
+      content="Production SaaS: RapidWire, GetNotes • Building Matchstick trading engine in public • TypeScript + Rust systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://matthewhendricks.net/hero.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Matthew Hendricks - SaaS Founder and Systems Engineer"
+    />
 
-<!-- Schema.org JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Matthew Hendricks",
-  "url": "https://matthewhendricks.net/",
-  "image": "https://matthewhendricks.net/icon.png",
-  "sameAs": [
-    "https://rapidwire.io",
-    "https://westmark.dev",
-    "https://github.com/watthem",
-    "https://www.npmjs.com/~watthem",
-    "https://www.linkedin.com/in/matthew-hendricks"
-  ],
-  "jobTitle": "SaaS Founder & Systems Engineer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Westmark Development",
-    "url": "https://westmark.dev"
-  },
-  "email": "matthew@westmark.dev",
-  "knowsAbout": [
-    "TypeScript",
-    "Rust",
-    "Full-Stack Development",
-    "SaaS Development",
-    "Trading Systems",
-    "High-Performance Engineering",
-    "AI Systems",
-    "Cloudflare Workers",
-    "Cap'n Proto RPC",
-    "Next.js"
-  ],
-  "description": "SaaS founder building production platforms (RapidWire, GetNotes) and Matchstick trading engine in Rust. Expert in TypeScript, high-performance systems, and trading infrastructure."
-}
-</script>
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Matthew Hendricks",
+        "url": "https://matthewhendricks.net/",
+        "image": "https://matthewhendricks.net/icon.png",
+        "sameAs": [
+          "https://rapidwire.io",
+          "https://westmark.dev",
+          "https://github.com/watthem",
+          "https://www.npmjs.com/~watthem",
+          "https://www.linkedin.com/in/matthew-hendricks"
+        ],
+        "jobTitle": "SaaS Founder & Systems Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Westmark Development",
+          "url": "https://westmark.dev"
+        },
+        "email": "matthew@westmark.dev",
+        "knowsAbout": [
+          "TypeScript",
+          "Rust",
+          "Full-Stack Development",
+          "SaaS Development",
+          "Trading Systems",
+          "High-Performance Engineering",
+          "AI Systems",
+          "Cloudflare Workers",
+          "Cap'n Proto RPC",
+          "Next.js"
+        ],
+        "description": "SaaS founder building production platforms (RapidWire, GetNotes) and Matchstick trading engine in Rust. Expert in TypeScript, high-performance systems, and trading infrastructure."
+      }
+    </script>
 
-<!-- Website Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Matthew Hendricks",
-  "url": "https://matthewhendricks.net/",
-  "description": "Personal website of Matthew Hendricks - SaaS Founder and Systems Engineer building trading infrastructure",
-  "author": {
-    "@type": "Person",
-    "name": "Matthew Hendricks"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://matthewhendricks.net/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Matthew Hendricks",
+        "url": "https://matthewhendricks.net/",
+        "description": "Personal website of Matthew Hendricks - SaaS Founder and Systems Engineer building trading infrastructure",
+        "author": {
+          "@type": "Person",
+          "name": "Matthew Hendricks"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://matthewhendricks.net/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
 
-<!-- DNS Prefetch & Preconnect for performance -->
-<link rel="dns-prefetch" href="https://plausible.io">
-<link rel="preconnect" href="https://plausible.io" crossorigin>
+    <!-- DNS Prefetch & Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://plausible.io" />
+    <link rel="preconnect" href="https://plausible.io" crossorigin />
 
-<!-- Plausible Analytics -->
-<script async defer data-domain="matthewhendricks.net" src="https://plausible.io/js/script.js"></script>
+    <!-- Plausible Analytics -->
+    <script
+      async
+      defer
+      data-domain="matthewhendricks.net"
+      src="https://plausible.io/js/script.js"
+    ></script>
 
-<!-- Stylesheet -->
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="wrap">
-<header aria-label="Site header">
-<div class="brand">
-  <h1>Matthew Hendricks</h1>
-  <p>SaaS Founder • Systems Engineer • Trading Tech</p>
-</div>
-<nav class="top" aria-label="Utility">
-<a href="/now.html">Now</a>
-<a href="/resume.html">Résumé</a>
-<a href="/cv.html">Portfolio</a>
-<a href="/consulting.html">Consulting</a>
-<a href="/oss.html">Open Source</a>
-<a class="cta btn" href="https://rapidwire.io?utm_source=portfolio&utm_medium=header&utm_campaign=cta">Try RapidWire →</a>
-</nav>
-</header>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header aria-label="Site header">
+        <div class="brand">
+          <h1>Matthew Hendricks</h1>
+          <p>SaaS Founder • Systems Engineer • Trading Tech</p>
+        </div>
+        <nav class="top" aria-label="Utility">
+          <a href="/now.html">Now</a>
+          <a href="/resume.html">Résumé</a>
+          <a href="/cv.html">Portfolio</a>
+          <a href="/consulting.html">Consulting</a>
+          <a href="/oss.html">Open Source</a>
+          <a
+            class="cta btn"
+            href="https://rapidwire.io?utm_source=portfolio&utm_medium=header&utm_campaign=cta"
+            >Try RapidWire →</a
+          >
+        </nav>
+      </header>
 
-<div class="parenting-banner">        <div class="banner-content">          <span class="banner-emoji">⚡</span>          <span class="banner-text">Building Matchstick trading engine in public — next-gen Rust performance meets developer ergonomics</span>        </div>      </div>
-<section class="intro" aria-label="About">
-<p>Building production <strong>SaaS platforms</strong> (RapidWire, GetNotes) and next-gen <strong>trading infrastructure</strong> (Matchstick). Expert in <strong>TypeScript systems</strong>, <strong>high-performance Rust</strong>, and <strong>AI-enhanced workflows</strong>.</p>
-<p class="soft">From Microsoft technical writing to founding multiple revenue-generating products. Now building Matchstick trading engine in public.</p>
-</section>
+      <div class="parenting-banner">
+        <div class="banner-content">
+          <span class="banner-emoji">⚡</span>
+          <span class="banner-text"
+            >Building Matchstick trading engine in public — next-gen Rust
+            performance meets developer ergonomics</span
+          >
+        </div>
+      </div>
+      <section class="intro" aria-label="About">
+        <p>
+          Building production <strong>SaaS platforms</strong> (RapidWire,
+          GetNotes) and next-gen
+          <strong>trading infrastructure</strong> (Matchstick). Expert in
+          <strong>TypeScript systems</strong>,
+          <strong>high-performance Rust</strong>, and
+          <strong>AI-enhanced workflows</strong>.
+        </p>
+        <p class="soft">
+          From Microsoft technical writing to founding multiple
+          revenue-generating products. Now building Matchstick trading engine in
+          public.
+        </p>
+      </section>
 
-<h2 class="section-title">Star Projects: Production SaaS + Trading Tech</h2>
-<section class="grid" aria-label="Featured projects">
-<article class="card featured" aria-labelledby="rapidwire">
-<h3 id="rapidwire">🚀 RapidWire</h3>
-<p><strong>Production SaaS • 15-Minute Lead Response Guarantee</strong></p>
-<p>Multi-tenant contractor CRM with comprehensive RFP automation. Built on <strong>Cloudflare Workers</strong> with enterprise security, 80% test coverage, and Sentry monitoring.</p>
-<ul>
-<li>Cap'n Web RPC architecture with plugin system</li>
-<li>Complete tenant isolation + PII encryption</li>
-<li>Real-time webhooks + rate limiting by plan</li>
-<li>PostHog analytics + comprehensive audit logs</li>
-</ul>
-<a class="btn primary" href="https://rapidwire.io/?utm_source=portfolio&utm_medium=card&utm_campaign=rapidwire">Launch RapidWire →</a>
-</article>
+      <h2 class="section-title">
+        Star Projects: Production SaaS + Trading Tech
+      </h2>
+      <section class="grid" aria-label="Featured projects">
+        <article class="card featured" aria-labelledby="rapidwire">
+          <h3 id="rapidwire">🚀 RapidWire</h3>
+          <p>
+            <strong>Production SaaS • 15-Minute Lead Response Guarantee</strong>
+          </p>
+          <p>
+            Multi-tenant contractor CRM with comprehensive RFP automation. Built
+            on <strong>Cloudflare Workers</strong> with enterprise security, 80%
+            test coverage, and Sentry monitoring.
+          </p>
+          <ul>
+            <li>Cap'n Web RPC architecture with plugin system</li>
+            <li>Complete tenant isolation + PII encryption</li>
+            <li>Real-time webhooks + rate limiting by plan</li>
+            <li>PostHog analytics + comprehensive audit logs</li>
+          </ul>
+          <a
+            class="btn primary"
+            href="https://rapidwire.io/?utm_source=portfolio&utm_medium=card&utm_campaign=rapidwire"
+            >Launch RapidWire →</a
+          >
+        </article>
 
-<article class="card featured" aria-labelledby="getnotes">
-<h3 id="getnotes">🎵 GetNotes</h3>
-<p><strong>Music Theory Learning Platform • Targeting 100 MRR</strong></p>
-<p>Interactive piano/guitar interfaces with <strong>MIDI support</strong> and AI-powered learning. Vue 3 frontend with comprehensive analytics tracking user behavior and engagement.</p>
-<ul>
-<li>Real-time MIDI device integration</li>
-<li>Interactive piano + guitar fretboard visualization</li>
-<li>Analytics-driven product development</li>
-<li>Comprehensive user behavior tracking</li>
-</ul>
-<a class="btn primary" href="https://github.com/watthem/getnotes-client">View GetNotes →</a>
-</article>
+        <article class="card featured" aria-labelledby="getnotes">
+          <h3 id="getnotes">🎵 GetNotes</h3>
+          <p>
+            <strong>Music Theory Learning Platform • Targeting 100 MRR</strong>
+          </p>
+          <p>
+            Interactive piano/guitar interfaces with
+            <strong>MIDI support</strong> and AI-powered learning. Vue 3
+            frontend with comprehensive analytics tracking user behavior and
+            engagement.
+          </p>
+          <ul>
+            <li>Real-time MIDI device integration</li>
+            <li>Interactive piano + guitar fretboard visualization</li>
+            <li>Analytics-driven product development</li>
+            <li>Comprehensive user behavior tracking</li>
+          </ul>
+          <a
+            class="btn primary"
+            href="https://github.com/watthem/getnotes-client"
+            >View GetNotes →</a
+          >
+        </article>
 
-<article class="card featured" aria-labelledby="matchstick">
-<h3 id="matchstick">⚡ Matchstick</h3>
-<p><strong>Rust Trading Engine • Building in Public</strong></p>
-<p>Next-gen trading infrastructure built for <strong>deterministic performance</strong> and developer joy. Single binary core with Cap'n Web RPC, sub-millisecond operations, zero flaky abstractions.</p>
-<ul>
-<li>High-performance Rust core with Polars integration</li>
-<li>Cap'n Proto RPC + TypeScript SDK ergonomics</li>
-<li>CLI-first tooling with comprehensive introspection</li>
-<li>No microservice hell - embeddable anywhere</li>
-</ul>
-<a class="btn primary" href="https://github.com/watthem/matchstick-workspace">Follow Progress →</a>
-</article>
-</section>
+        <article class="card featured" aria-labelledby="matchstick">
+          <h3 id="matchstick">⚡ Matchstick</h3>
+          <p><strong>Rust Trading Engine • Building in Public</strong></p>
+          <p>
+            Next-gen trading infrastructure built for
+            <strong>deterministic performance</strong> and developer joy. Single
+            binary core with Cap'n Web RPC, sub-millisecond operations, zero
+            flaky abstractions.
+          </p>
+          <ul>
+            <li>High-performance Rust core with Polars integration</li>
+            <li>Cap'n Proto RPC + TypeScript SDK ergonomics</li>
+            <li>CLI-first tooling with comprehensive introspection</li>
+            <li>No microservice hell - embeddable anywhere</li>
+          </ul>
+          <a
+            class="btn primary"
+            href="https://github.com/watthem/matchstick-workspace"
+            >Follow Progress →</a
+          >
+        </article>
+      </section>
 
-<h2 class="section-title">Complete Developer Toolkit</h2>
-<section class="grid" aria-label="Technical capabilities">
-<article class="card" aria-labelledby="tech-stack">
-<h3 id="tech-stack">⚡ Production Systems</h3>
-<p><strong>TypeScript • Rust • AI Integration • High-Performance Infrastructure</strong></p>
-<ul>
-<li><strong>Languages:</strong> TypeScript, Rust, Python, JavaScript</li>
-<li><strong>Frontend:</strong> Next.js 15, Vue 3, React, Astro</li>
-<li><strong>Backend:</strong> Cloudflare Workers, Express.js, Cap'n Proto RPC</li>
-<li><strong>Performance:</strong> Rust engines, Polars, sub-ms operations</li>
-<li><strong>Infrastructure:</strong> Vercel, Railway, Docker, Kubernetes</li>
-</ul>
-</article>
+      <h2 class="section-title">Complete Developer Toolkit</h2>
+      <section class="grid" aria-label="Technical capabilities">
+        <article class="card" aria-labelledby="tech-stack">
+          <h3 id="tech-stack">⚡ Production Systems</h3>
+          <p>
+            <strong
+              >TypeScript • Rust • AI Integration • High-Performance
+              Infrastructure</strong
+            >
+          </p>
+          <ul>
+            <li>
+              <strong>Languages:</strong> TypeScript, Rust, Python, JavaScript
+            </li>
+            <li><strong>Frontend:</strong> Next.js 15, Vue 3, React, Astro</li>
+            <li>
+              <strong>Backend:</strong> Cloudflare Workers, Express.js, Cap'n
+              Proto RPC
+            </li>
+            <li>
+              <strong>Performance:</strong> Rust engines, Polars, sub-ms
+              operations
+            </li>
+            <li>
+              <strong>Infrastructure:</strong> Vercel, Railway, Docker,
+              Kubernetes
+            </li>
+          </ul>
+        </article>
 
-<article class="card" aria-labelledby="oss-work">
-<h3 id="oss-work">🛠️ Developer Tools Portfolio</h3>
-<p><strong>Framework-Agnostic Libraries + Creative Tools</strong></p>
-<ul>
-<li><strong>FieldTest:</strong> TypeScript validation toolkit (Standard Schema)</li>
-<li><strong>MarkdownFlow:</strong> Headless Readwise alternative (Cloudflare Workers)</li>
-<li><strong>Brickwave:</strong> Deterministic noise generator for DSP/AI research</li>
-<li><strong>Forage:</strong> ADHD-friendly file discovery (Electron + Python)</li>
-</ul>
-<a class="btn" href="https://github.com/watthem">Browse Tools →</a>
-</article>
-</section>
+        <article class="card" aria-labelledby="oss-work">
+          <h3 id="oss-work">🛠️ Developer Tools Portfolio</h3>
+          <p><strong>Framework-Agnostic Libraries + Creative Tools</strong></p>
+          <ul>
+            <li>
+              <strong>FieldTest:</strong> TypeScript validation toolkit
+              (Standard Schema)
+            </li>
+            <li>
+              <strong>MarkdownFlow:</strong> Headless Readwise alternative
+              (Cloudflare Workers)
+            </li>
+            <li>
+              <strong>Brickwave:</strong> Deterministic noise generator for
+              DSP/AI research
+            </li>
+            <li>
+              <strong>Forage:</strong> ADHD-friendly file discovery (Electron +
+              Python)
+            </li>
+          </ul>
+          <a class="btn" href="https://github.com/watthem">Browse Tools →</a>
+        </article>
+      </section>
 
-<h2 class="section-title">Architecture & Business Results</h2>
-<section class="business-metrics">
-<div class="metric-card">
-<h4>🏗️ Architecture Patterns</h4>
-<ul>
-<li><strong>Monorepos:</strong> Turborepo + PNPM for 13+ projects</li>
-<li><strong>Edge Computing:</strong> Cloudflare Workers global deployment</li>
-<li><strong>RPC Systems:</strong> Cap'n Proto + TypeScript ergonomics</li>
-<li><strong>Performance:</strong> Sub-millisecond Rust engines</li>
-</ul>
-</div>
+      <h2 class="section-title">Architecture & Business Results</h2>
+      <section class="business-metrics">
+        <div class="metric-card">
+          <h4>🏗️ Architecture Patterns</h4>
+          <ul>
+            <li>
+              <strong>Monorepos:</strong> Turborepo + PNPM for 13+ projects
+            </li>
+            <li>
+              <strong>Edge Computing:</strong> Cloudflare Workers global
+              deployment
+            </li>
+            <li>
+              <strong>RPC Systems:</strong> Cap'n Proto + TypeScript ergonomics
+            </li>
+            <li><strong>Performance:</strong> Sub-millisecond Rust engines</li>
+          </ul>
+        </div>
 
-<div class="metric-card">
-<h4>💼 Production Portfolio</h4>
-<ul>
-<li><strong>RapidWire:</strong> Multi-tenant SaaS in production</li>
-<li><strong>GetNotes:</strong> Music learning platform (targeting 100 MRR)</li>
-<li><strong>MarkdownFlow:</strong> Live on Cloudflare Workers</li>
-<li><strong>13 Active Projects:</strong> From CLI tools to trading engines</li>
-</ul>
-</div>
+        <div class="metric-card">
+          <h4>💼 Production Portfolio</h4>
+          <ul>
+            <li><strong>RapidWire:</strong> Multi-tenant SaaS in production</li>
+            <li>
+              <strong>GetNotes:</strong> Music learning platform (targeting 100
+              MRR)
+            </li>
+            <li><strong>MarkdownFlow:</strong> Live on Cloudflare Workers</li>
+            <li>
+              <strong>13 Active Projects:</strong> From CLI tools to trading
+              engines
+            </li>
+          </ul>
+        </div>
 
-<div class="metric-card">
-<h4>🚀 Quality Standards</h4>
-<ul>
-<li><strong>Testing:</strong> 80%+ coverage with comprehensive suites</li>
-<li><strong>Monitoring:</strong> Sentry error tracking + PostHog analytics</li>
-<li><strong>Security:</strong> Tenant isolation, PII encryption, audit logs</li>
-<li><strong>Documentation:</strong> Enterprise-grade README standards</li>
-</ul>
-</div>
-</section>
+        <div class="metric-card">
+          <h4>🚀 Quality Standards</h4>
+          <ul>
+            <li>
+              <strong>Testing:</strong> 80%+ coverage with comprehensive suites
+            </li>
+            <li>
+              <strong>Monitoring:</strong> Sentry error tracking + PostHog
+              analytics
+            </li>
+            <li>
+              <strong>Security:</strong> Tenant isolation, PII encryption, audit
+              logs
+            </li>
+            <li>
+              <strong>Documentation:</strong> Enterprise-grade README standards
+            </li>
+          </ul>
+        </div>
+      </section>
 
-<section class="cta-section">
-<h2>Follow the Journey</h2>
-<p>Building <strong>Matchstick trading engine in public</strong> while scaling RapidWire and GetNotes. Available for <strong>consulting engagements</strong> in SaaS architecture, trading infrastructure, and technical documentation.</p>
-<div class="cta-buttons">
-<a class="btn primary" href="https://github.com/watthem/matchstick-workspace">Follow Matchstick →</a>
-<a class="btn" href="/consulting.html">Consulting Services</a>
-<a class="btn" href="https://rapidwire.io/?utm_source=portfolio&utm_medium=cta&utm_campaign=bottom">Try RapidWire</a>
-</div>
-</section>
+      <section class="cta-section">
+        <h2>Follow the Journey</h2>
+        <p>
+          Building <strong>Matchstick trading engine in public</strong> while
+          scaling RapidWire and GetNotes. Available for
+          <strong>consulting engagements</strong> in SaaS architecture, trading
+          infrastructure, and technical documentation.
+        </p>
+        <div class="cta-buttons">
+          <a
+            class="btn primary"
+            href="https://github.com/watthem/matchstick-workspace"
+            >Follow Matchstick →</a
+          >
+          <a class="btn" href="/consulting.html">Consulting Services</a>
+          <a
+            class="btn"
+            href="https://rapidwire.io/?utm_source=portfolio&utm_medium=cta&utm_campaign=bottom"
+            >Try RapidWire</a
+          >
+        </div>
+      </section>
 
-<footer>
-<p><strong>Matthew Hendricks</strong> • SaaS + Trading Tech • <a href="mailto:matthew@westmark.dev">matthew@westmark.dev</a></p>
-<p class="soft">Production systems that scale. Trading engines that perform. Building in public.</p>
-</footer>
-</div>
-</body>
+      <footer>
+        <p>
+          <strong>Matthew Hendricks</strong> • SaaS + Trading Tech •
+          <a href="mailto:matthew@westmark.dev">matthew@westmark.dev</a>
+        </p>
+        <p class="soft">
+          Production systems that scale. Trading engines that perform. Building
+          in public.
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
