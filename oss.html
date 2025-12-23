@@ -2,93 +2,60 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>Open Source — FieldTest & Obsidian Plugins | Matthew Hendricks</title>
+    <title>Open Source — FieldTest & Front.js | Matthew Hendricks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="Open source projects by Matthew Hendricks (watthem): FieldTest validation toolkit for TypeScript, Brickwave audio generator, and Obsidian plugins for knowledge management." />
+    <meta
+      name="description"
+      content="Open source projects by Matthew Hendricks (@watthem): @watthem/fieldtest and @frontjs/core, plus other small tools."
+    />
     <meta name="author" content="Matthew Hendricks" />
-    <meta name="keywords" content="fieldtest, open source, typescript, validation toolkit, obsidian plugins, markdown validation, standard schema, npm packages, github" />
+    <meta
+      name="keywords"
+      content="fieldtest, frontjs, open source, typescript, validation toolkit, standard schema, npm packages, github, developer tools"
+    />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    
-    <!-- Canonical URL -->
+
     <link rel="canonical" href="https://matthewhendricks.net/oss.html" />
-    
-    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#007acc" />
-    
-    <!-- Open Graph / Facebook -->
+
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Matthew Hendricks" />
-    <meta property="og:title" content="Open Source Projects — FieldTest & Developer Tools" />
-    <meta property="og:description" content="FieldTest validation toolkit, Brickwave audio generator, and other open source TypeScript projects by Matthew Hendricks." />
+    <meta property="og:title" content="Open Source — FieldTest & Front.js" />
+    <meta property="og:description" content="Open source packages and tools by Matthew Hendricks (@watthem)." />
     <meta property="og:url" content="https://matthewhendricks.net/oss.html" />
     <meta property="og:image" content="https://matthewhendricks.net/hero.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Open Source Projects by Matthew Hendricks" />
-    
-    <!-- Twitter -->
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@watthem" />
     <meta name="twitter:creator" content="@watthem" />
-    <meta name="twitter:title" content="Open Source — FieldTest & Developer Tools" />
-    <meta name="twitter:description" content="FieldTest validation toolkit and other open source TypeScript projects." />
+    <meta name="twitter:title" content="Open Source — FieldTest & Front.js" />
+    <meta name="twitter:description" content="Open source packages and tools by Matthew Hendricks (@watthem)." />
     <meta name="twitter:image" content="https://matthewhendricks.net/hero.png" />
-    
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Open Source Projects",
-      "description": "Open source projects by Matthew Hendricks including FieldTest validation toolkit",
-      "url": "https://matthewhendricks.net/oss.html",
-      "author": {
-        "@type": "Person",
-        "name": "Matthew Hendricks",
-        "url": "https://matthewhendricks.net"
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://matthewhendricks.net/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Open Source",
-            "item": "https://matthewhendricks.net/oss.html"
-          }
-        ]
-      }
-    }
-    </script>
-    
-    <!-- DNS Prefetch & Preconnect -->
+
     <link rel="dns-prefetch" href="https://github.com" />
     <link rel="preconnect" href="https://github.com" crossorigin />
-    
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="wrap">
       <header>
         <div class="brand">
           <h1>Open Source</h1>
           <p>
-            FieldTest & Obsidian plugins under
-            <a href="https://github.com/watthem">@watthem</a>
+            Packages and tools under <a href="https://github.com/watthem" target="_blank" rel="noreferrer">@watthem</a>
           </p>
         </div>
         <nav class="top">
@@ -97,48 +64,55 @@
           <a href="/cv.html">Portfolio</a>
           <a href="/resume.html">Résumé</a>
           <a href="/consulting.html">Consulting</a>
-          <a href="https://watthem.blog" target="_blank">Blog</a>
-          <a href="https://matchstick.trading/blog" target="_blank">Dev Log</a>
+          <a href="https://watthem.blog" target="_blank" rel="noreferrer">Blog</a>
         </nav>
       </header>
 
-      <h2>FieldTest — TypeScript Validation Toolkit</h2>
+      <section class="intro">
+        <p>
+          I publish small, practical libraries that support documentation-heavy and workflow-heavy products.
+          These projects are independent of client work, but often reflect the same focus: clarity, maintainability, and good DX.
+        </p>
+      </section>
+
+      <h2>@watthem/fieldtest — TypeScript Validation Toolkit</h2>
       <p>
-        Comprehensive validation for content management and schema-driven apps
-        across modern frameworks.
+        A schema validation toolkit for content-rich systems and developer-facing workflows.
       </p>
-      <p>
-        <a class="btn" href="https://github.com/watthem/fieldtest"
-          >GitHub Repo</a
-        >
-        <a
-          class="btn"
-          href="https://github.com/watthem/fieldtest/tree/main/examples"
-          >Examples</a
-        >
-        <a class="btn" href="https://github.com/watthem/fieldtest#readme"
-          >README</a
-        >
+      <p class="links">
+        <a href="https://github.com/watthem/fieldtest" target="_blank" rel="noreferrer">GitHub Repo</a>
+        <a href="https://github.com/watthem/fieldtest/tree/main/examples" target="_blank" rel="noreferrer">Examples</a>
+        <a href="https://github.com/watthem/fieldtest#readme" target="_blank" rel="noreferrer">README</a>
+        <a href="https://www.npmjs.com/package/@watthem/fieldtest" target="_blank" rel="noreferrer">NPM</a>
       </p>
       <ul>
         <li>Deterministic schemas and pluggable rules</li>
         <li>Works in Node, Next.js, Astro, and CLIs</li>
-        <li>Great for migrations, docs freshness, and content quality gates</li>
+        <li>Useful for migrations, docs freshness, and content quality gates</li>
       </ul>
 
-      <h3>Products that use FieldTest</h3>
+      <h2>@frontjs/core — Micro-Framework Experiment</h2>
+      <p>
+        A small framework experiment focused on secure-by-default patterns and islands-first architecture.
+        (Migrated from the old <span class="muted">@watthem/frontjs</span> namespace.)
+      </p>
+      <p class="links">
+        <a href="https://frontjs.dev/docs" target="_blank" rel="noreferrer">Docs</a>
+        <a href="https://www.npmjs.com/package/@frontjs/core" target="_blank" rel="noreferrer">NPM</a>
+      </p>
       <ul>
-        <li>Docs Score — documentation health assessment</li>
-        <li>WorkTrace — QR-based field service management</li>
-        <li>CSV Processor — automated, validated data pipelines</li>
-        <li>RFP Radar — procurement monitoring</li>
+        <li>Minimal core with optional packages</li>
+        <li>Designed to keep “intent” and action boundaries explicit</li>
+        <li>Great for experiments that value simplicity and control</li>
       </ul>
-      <p class="muted">
-        These live on Westmark.dev for contractor audiences; FieldTest itself
-        remains open and independent here.
+
+      <h2>Other Projects (Less Active)</h2>
+      <p class="soft">
+        I have older repos and experiments (including some Obsidian-related work). I’m not focused on plugins right now,
+        but I keep the work public for reference and reuse.
       </p>
 
-      <h2>Audio Expirments</h2>
+      <h2>Audio Experiments</h2>
       <h3>brickwave</h3>
       <p>
         <strong>Offline deterministic noise generator for DSP devs, AI researchers, and sound designers.</strong>
@@ -146,16 +120,10 @@
       <ul>
         <li>Generate white, pink, and brown noise</li>
         <li>Seed-based deterministic generation for reproducible results</li>
-        <li>Stereo output support</li>
-        <li>Envelope shaping with fade-in/fade-out</li>
-        <li>Pacific Northwest ambient layers (rain, birds, running water)</li>
-        <li>Configurable duration and sample rate</li>
-        <li>High-quality 16-bit PCM WAV output</li>
-        <li>Minimal dependencies (only commander)</li>
-        <li>Fast TypeScript implementation</li>
+        <li>Stereo output support and WAV output</li>
       </ul>
-      <p>
-        <a class="btn" href="https://github.com/watthem/brickwave">GitHub Repo</a>
+      <p class="links">
+        <a href="https://github.com/watthem/brickwave" target="_blank" rel="noreferrer">GitHub Repo</a>
       </p>
 
       <footer>

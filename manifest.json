@@ -1,7 +1,7 @@
 {
-  "name": "Matthew Hendricks - SaaS Founder & Technical Leader",
+  "name": "Matthew Hendricks — Docs & Developer Experience Consulting",
   "short_name": "M. Hendricks",
-  "description": "Personal website of Matthew Hendricks - SaaS founder, TypeScript expert, and technical leader",
+  "description": "Personal site for Matthew Hendricks. Docs, onboarding, and developer experience consulting + open source projects (@watthem, @frontjs).",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0b0c10",
@@ -21,7 +21,7 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["business", "technology", "productivity"],
+  "categories": ["business", "productivity", "technology"],
   "lang": "en-US",
   "dir": "ltr",
   "scope": "/",

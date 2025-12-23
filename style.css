@@ -448,3 +448,53 @@ footer p {
     text-align: center;
   }
 }
+
+/* --- Consulting page polish (non-breaking) --- */
+
+/* Make inline links feel clickable without changing your theme */
+.intro a,
+.card a,
+footer a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: rgba(232, 232, 234, 0.35);
+  text-underline-offset: 3px;
+}
+
+.intro a:hover,
+.card a:hover,
+footer a:hover {
+  text-decoration-color: rgba(232, 232, 234, 0.8);
+}
+
+/* Improve paragraph rhythm in intro blocks */
+.intro p {
+  margin-bottom: 0.9rem;
+}
+
+/* Slightly tighter list spacing inside cards */
+.card ul {
+  margin: 0.65rem 0;
+  padding-left: 1.5rem;
+}
+
+.card li {
+  margin-bottom: 0.35rem;
+}
+
+/* Make the CTA buttons feel a bit more “buttony” without changing style */
+.cta-buttons .btn {
+  min-width: 180px;
+  text-align: center;
+}
+
+/* Ensure featured card overlay doesn't dim text/link interaction */
+.card.featured > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Recommended: gently emphasize the recommended engagement card */
+.card.recommended {
+  border-color: rgba(0, 122, 204, 0.5);
+}
