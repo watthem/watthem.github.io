@@ -1,236 +1,33 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Matthew Hendricks — Docs, Onboarding & Developer Experience Consulting</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta
-      name="description"
-      content="Small, fixed-scope consulting to improve documentation, onboarding, and developer experience. Docs audits, API clarity, and DX improvements with concrete deliverables."
-    />
-    <meta name="author" content="Matthew Hendricks" />
-    <meta
-      name="keywords"
-      content="technical documentation, developer experience, onboarding, API docs, documentation audit, technical writing, consulting, westmark.dev, docs-score"
-    />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta http-equiv="x-ua-compatible" content="IE=edge" />
-
-    <link rel="canonical" href="https://matthewhendricks.net/" />
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#007acc" />
-    <meta name="msapplication-TileColor" content="#007acc" />
-    <meta name="msapplication-config" content="/browserconfig.xml" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Matthew Hendricks" />
-    <meta property="og:title" content="Matthew Hendricks — Docs, Onboarding & Developer Experience Consulting" />
-    <meta
-      property="og:description"
-      content="Small, fixed-scope consulting to improve docs, onboarding, and developer experience. Docs audits and clarity work with concrete deliverables."
-    />
-    <meta property="og:url" content="https://matthewhendricks.net/" />
-    <meta property="og:image" content="https://matthewhendricks.net/hero.png" />
-    <meta property="og:image:secure_url" content="https://matthewhendricks.net/hero.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Matthew Hendricks — Documentation and Developer Experience Consulting" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@watthem" />
-    <meta name="twitter:creator" content="@watthem" />
-    <meta name="twitter:title" content="Matthew Hendricks — Docs & DX Consulting" />
-    <meta
-      name="twitter:description"
-      content="Docs audits • onboarding clarity • developer experience improvements — small, fixed-scope consulting."
-    />
-    <meta name="twitter:image" content="https://matthewhendricks.net/hero.png" />
-    <meta name="twitter:image:alt" content="Matthew Hendricks — Documentation and Developer Experience Consulting" />
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Matthew Hendricks",
-        "url": "https://matthewhendricks.net/",
-        "image": "https://matthewhendricks.net/icon.png",
-        "sameAs": [
-          "https://westmark.dev",
-          "https://docs-score.com",
-          "https://github.com/watthem",
-          "https://www.npmjs.com/~watthem",
-          "https://www.linkedin.com/in/matthew-hendricks-westmarkdev"
-        ],
-        "jobTitle": "Technical Consultant",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Westmark.dev",
-          "url": "https://westmark.dev"
-        },
-        "email": "matthew@westmark.dev",
-        "knowsAbout": [
-          "Technical Documentation",
-          "Developer Experience",
-          "API Documentation",
-          "Onboarding",
-          "JavaScript",
-          "TypeScript",
-          "Git",
-          "Markdown",
-          "Privacy-Safe Data"
-        ],
-        "description": "Small, fixed-scope consulting for documentation, onboarding, and developer experience. Docs audits, API clarity improvements, and contributor-friendly workflows."
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Matthew Hendricks",
-        "url": "https://matthewhendricks.net/",
-        "description": "Personal website of Matthew Hendricks — documentation, onboarding, and developer experience consulting.",
-        "author": { "@type": "Person", "name": "Matthew Hendricks" }
-      }
-    </script>
-
-    <!-- Plausible Analytics -->
-    <link rel="dns-prefetch" href="https://plausible.io" />
-    <link rel="preconnect" href="https://plausible.io" crossorigin />
-    <script async defer data-domain="matthewhendricks.net" src="https://plausible.io/js/script.js"></script>
-
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@watthem — OSS Documentation</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: system-ui, -apple-system, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+      p { color: #555; margin-bottom: 1.5rem; }
+      ul { list-style: none; }
+      li { margin-bottom: 0.75rem; }
+      a { color: #0969da; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .muted { color: #888; font-size: 0.875rem; }
+    </style>
   </head>
-
   <body>
-    <div class="wrap">
-      <header aria-label="Site header">
-        <div class="brand">
-          <h1>Matthew Hendricks</h1>
-          <p>Documentation • Onboarding • Developer Experience</p>
-        </div>
-        <nav class="top" aria-label="Utility">
-          <a href="/now.html">Now</a>
-          <a href="/resume.html">Résumé</a>
-          <a href="/cv.html">Portfolio</a>
-          <a href="/consulting.html">Consulting</a>
-          <a href="/oss.html">Open Source</a>
-          <a href="https://watthem.blog" target="_blank" rel="noreferrer">Blog</a>
-          <a class="cta" href="mailto:matthew@westmark.dev?subject=Docs%20%2F%20Onboarding%20Consulting">Email →</a>
-        </nav>
-      </header>
-
-      <div class="parenting-banner">
-        <div class="banner-content">
-          <span class="banner-emoji">🧭</span>
-          <span class="banner-text">Small, fixed-scope consulting to reduce developer friction (docs + onboarding + DX).</span>
-        </div>
-      </div>
-
-      <section class="intro" aria-label="About">
-        <p>
-          I help startups improve <strong>documentation</strong>, <strong>onboarding</strong>, and <strong>developer experience</strong>
-          through small, clearly scoped engagements. The output is practical: clarity fixes, prioritized recommendations,
-          and workflows your team can maintain.
-        </p>
-        <p class="soft">
-          Background includes developer-facing roles across Privacy Dynamics, Microsoft, Premera Blue Cross, Ookla (Speedtest.net),
-          and NinjaTrader.
-        </p>
-      </section>
-
-      <h2 class="section-title">Start Here</h2>
-      <section class="grid" aria-label="Start here">
-        <article class="card featured" aria-labelledby="consulting">
-          <h3 id="consulting">📘 Docs & Onboarding Consulting</h3>
-          <p><strong>Fast clarity wins with a defined finish line.</strong></p>
-          <p>
-            Best for teams who feel “something is off” in docs or onboarding but don’t want a long engagement.
-            I focus on the pages and flows that drive adoption: quickstarts, integrations, API docs, and troubleshooting.
-          </p>
-          <ul>
-            <li>Documentation audits + prioritized fix list</li>
-            <li>Quickstart / onboarding rewrite and example-first flow</li>
-            <li>API docs clarity improvements and usability review</li>
-          </ul>
-          <a class="btn primary" href="/consulting.html">See consulting →</a>
-        </article>
-
-        <article class="card" aria-labelledby="docsscore">
-          <h3 id="docsscore">🧪 Docs-Score</h3>
-          <p><strong>Lightweight docs diagnostics.</strong></p>
-          <p>
-            Docs-Score is a small tool I’m building to help teams quickly evaluate documentation readiness and identify gaps.
-          </p>
-          <ul>
-            <li>Intake + reporting workflow</li>
-            <li>Clear, practical recommendations</li>
-            <li>Designed to be a starting point, not a rabbit hole</li>
-          </ul>
-          <a class="btn" href="https://docs-score.com" target="_blank" rel="noreferrer">Visit Docs-Score →</a>
-        </article>
-      </section>
-
-      <h2 class="section-title">Portfolio Highlights</h2>
-      <section class="grid" aria-label="Portfolio highlights">
-        <article class="card" aria-labelledby="westmark">
-          <h3 id="westmark">🔧 Westmark.dev</h3>
-          <p><strong>Consulting + practical product work.</strong></p>
-          <p>
-            A home for focused engagements and tools that reduce documentation and onboarding friction.
-          </p>
-          <a class="btn" href="https://westmark.dev" target="_blank" rel="noreferrer">Visit Westmark.dev →</a>
-        </article>
-
-        <article class="card" aria-labelledby="oss">
-          <h3 id="oss">🛠️ Open Source</h3>
-          <p><strong>Small tools and libraries that support docs and workflows.</strong></p>
-          <p class="soft">See FieldTest and other projects under @watthem.</p>
-          <a class="btn" href="/oss.html">Browse OSS →</a>
-        </article>
-
-        <article class="card" aria-labelledby="rnd">
-          <h3 id="rnd">⚡ R&amp;D</h3>
-          <p><strong>Finance-related tooling explorations.</strong></p>
-          <p>
-            I also explore developer ergonomics and event/data tooling in finance-related systems under Matchstick.
-            This is R&amp;D—not my primary consulting focus.
-          </p>
-          <a class="btn" href="https://matchstick.trading" target="_blank" rel="noreferrer">Matchstick →</a>
-        </article>
-      </section>
-
-      <section class="cta-section">
-        <h2>Want a docs/DX clarity pass?</h2>
-        <p>
-          Send a link to your docs and a short description of what you want to improve. I’ll reply with a suggested micro-scope.
-        </p>
-        <div class="cta-buttons">
-          <a class="btn primary" href="mailto:matthew@westmark.dev?subject=Docs%20%2F%20Onboarding%20Consulting">Email me →</a>
-          <a class="btn" href="/consulting.html">Consulting</a>
-          <a class="btn" href="/resume.html">Résumé</a>
-        </div>
-      </section>
-
-      <footer>
-        <p>
-          <strong>Matthew Hendricks</strong> • Consulting • <a href="mailto:matthew@westmark.dev">matthew@westmark.dev</a>
-        </p>
-        <p class="soft">Clear docs. Easier onboarding. Less friction for developers.</p>
-      </footer>
-    </div>
+    <h1>@watthem</h1>
+    <p>Open-source project documentation hosted on GitHub Pages.</p>
+    <ul>
+      <li><a href="https://github.com/watthem/quarrel">quarrel</a> <span class="muted">— TF-IDF similarity engine</span></li>
+      <li><a href="https://github.com/watthem/similar-files">similar-files</a> <span class="muted">— CLI codebase search</span></li>
+      <li><a href="https://github.com/watthem/quarrel-similar-notes">quarrel-similar-notes</a> <span class="muted">— Obsidian plugin</span></li>
+      <li><a href="https://github.com/watthem/fieldtest">fieldtest</a> <span class="muted">— Schema validation toolkit</span></li>
+      <li><a href="https://github.com/disclosures/disclosures">disclosures</a> <span class="muted">— CSS design system</span></li>
+    </ul>
+    <p class="muted" style="margin-top: 2rem;">
+      Portfolio &amp; consulting: <a href="https://matthewhendricks.net">matthewhendricks.net</a>
+    </p>
   </body>
 </html>
