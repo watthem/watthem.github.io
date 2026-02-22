@@ -1,0 +1,8 @@
+.forage/
+.agents/
+.claude/
+artifacts/
+policy/
+dispatch
+PROMPT.md
+*.plan.md
